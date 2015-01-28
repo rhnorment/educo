@@ -1,14 +1,34 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-  <title>Educo</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <%= render 'layouts/head' %>
 </head>
+
 <body>
 
-<%= yield %>
+    <div class="wrapper">
+
+    <!-- HEADER -->
+    <header class="header">
+        <%= render 'layouts/header' %>
+    </header>
+
+    <!-- NAV -->
+    <nav class="main-nav" role="navigation">
+      <%= render 'layouts/main_nav' %>
+    </nav>
+
+    <!-- CONTENT -->
+
+
+    </div>
+
 
 </body>
+
+
+
 </html>
+
