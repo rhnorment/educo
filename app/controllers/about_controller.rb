@@ -1,7 +1,7 @@
 class AboutController < ApplicationController
 
   def index
-    @subtitle = 'About Us'
+    @page_title = 'About Us'
   end
 
 end

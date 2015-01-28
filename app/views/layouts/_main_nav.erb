@@ -1,10 +1,22 @@
 <div class="container">
 
+  <div class="navbar-header">
 
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
 
+  </div>
 
+  <div class="navbar-collapse collapse" id="navbar-collapse">
 
+    <ul class="nav navbar-nav">
+     <%= nav_link_to 'About Us', about_index_path, {}, { controller_segment: 1, wrapper: 'li', wrapper_class: 'nav-item' } %>
+    </ul>   <!-- TODO:  FINALIZE MENU TREE -->
 
-
+  </div>
 
 </div>

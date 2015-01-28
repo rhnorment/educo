@@ -1,0 +1,70 @@
+<div class="footer-content">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="footer-col col-md-3 col-sm-4 about">
+        <div class="footer-col-inner">
+          <h3>About</h3>
+          <ul>
+            <%= content_tag :li, link_to(icon('caret-right', 'About Us'), about_index_path) %>
+            <%= content_tag :li, link_to(icon('caret-right', 'Contact Us'), "#") %>  <!-- TODO -->
+            <%= content_tag :li, link_to(icon('caret-right', 'Privacy Policy'), "#") %>  <!-- TODO -->
+            <%= content_tag :li, link_to(icon('caret-right', 'Terms & Conditions'), "#") %>  <!-- TODO -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-col col-md-6 col-sm-8 newsletter">
+        <div class="footer-col-inner">
+          <h3>Join our mailing list</h3>
+          <p>Subscribe to get our weekly newsletter delivered directly to your inbox</p>
+          <!-- TODO:  BUILD SUBSCRIPTION FORM -->
+        </div>
+      </div>
+
+      <div class="footer-col col-md-3 col-sm-12 contact">
+        <div class="footer-col-inner">
+          <h3>Contact us</h3>
+          <div class="row">
+            <p class="adr clearfix col-md-12 col-sm-4">
+              <%= icon('map-marker', nil, class:'pull-left') %>
+              <span class="adr-group pull-left">
+                <span class="street-address">EDUCO</span><br>
+                <span class="region">6820 Auto Club Road, Suite T</span><br>
+                <span class="postal-code">Bloomington, MN  55438</span><br>
+                <span class="country-name">USA</span>
+              </span>
+            </p>
+            <p class="tel col-md-12 col-sm-4"><%= icon('phone', '000-000-0000') %></p>  <!-- TODO -->
+            <p class="email col-md-12 col-sm-4">
+                <%= icon('envelope') %>
+                <%= mail_to 'inquiries@educo.com' %>    <!-- TODO -->
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="bottom-bar">
+  <div class="container">
+    <div class="row">
+      <small class="copyright col-md-6 col-sm-12 col-xs-12">
+        Copyright &copy; 2015 EDUCO | Website by <%= link_to 'Red Sherpa LLC', 'http://www.sherpa.red', target:'_blank' %>
+      </small>
+      <ul class="social pull-right col-md-6 col-sm-12 col-xs-12">
+        <%= content_tag :li, link_to(icon('twitter'), "#") %>
+        <%= content_tag :li, link_to(icon('facebook'), "#") %>
+        <%= content_tag :li, link_to(icon('youtube'), "#") %>
+        <%= content_tag :li, link_to(icon('linkedin'), "#") %>
+        <%= content_tag :li, link_to(icon('google-plus'), "#") %>
+      </ul>
+    </div>
+  </div>
+</div>

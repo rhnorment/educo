@@ -2,7 +2,7 @@ module ApplicationHelper
 
   # RENDER A DYNAMIC PAGE TITLE:
   def page_title
-    @subtitle ? "EDUCO | #{@subtitle}" : 'EDUCO'
+    @page_title ? "EDUCO | #{@page_title}" : 'EDUCO'
   end
 
 end

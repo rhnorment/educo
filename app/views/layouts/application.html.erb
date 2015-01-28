@@ -10,21 +10,58 @@
 
     <div class="wrapper">
 
-    <!-- HEADER -->
-    <header class="header">
-        <%= render 'layouts/header' %>
-    </header>
+        <!-- HEADER -->
+        <header class="header">
+            <%= render 'layouts/header' %>
+        </header>
 
-    <!-- NAV -->
-    <nav class="main-nav" role="navigation">
-      <%= render 'layouts/main_nav' %>
-    </nav>
+        <!-- NAV -->
+        <nav class="main-nav" role="navigation">
+            <%= render 'layouts/main_nav' %>
+        </nav>
 
-    <!-- CONTENT -->
+        <!-- CONTENT -->
+        <div class="content container">
 
+          <div class="page-wrapper">
+
+            <header class="page-heading clearfix">
+              <h1 class="heading-title pull-left"><%= @page_title %></h1>
+              <div class="breadcrumbs pull-right">
+                <ul class="breadcrumbs-list">
+                  <li class="breadcrumbs-label">You are here:</li>
+                  <li>
+                    <%= link_to 'Home', root_path %>
+                    <%= icon 'angle-right' %>
+                  </li>
+                  <li><%= @page_title %>
+                </ul>
+              </div>
+            </header>
+
+            <div class="page-content">
+              <div class="row page-row">
+                <article class="welcome col-md-8 col-sm-7">
+                  <%= yield %>                                  <!-- YIELD TO VIEW -->
+                </article>
+              </div>
+            </div>
+
+            <aside class="page-sidebar col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">
+                <%= yield :sidebar %>                           <!-- YIELD TO CONTROLLER SIDEBAR -->
+            </aside>
+
+          </div>
+
+        </div>
 
     </div>
 
+    <footer class="footer">
+      <%= render 'layouts/footer' %>
+    </footer>
+
+    <%= debug(params) if Rails.env.development? %>
 
 </body>
 
