@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'jquery-turbolinks'
 
 # APPLICATION GEMS:
+gem 'devise'
+gem 'activeadmin', github: 'activeadmin'
 
 # HELPER GEMS:
 gem 'font-awesome-sass'
