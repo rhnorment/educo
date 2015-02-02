@@ -9,7 +9,7 @@
           <h3>About</h3>
           <ul>
             <%= content_tag :li, link_to(icon('caret-right', 'About Us'), about_index_path) %>
-            <%= content_tag :li, link_to(icon('caret-right', 'Contact Us'), "#") %>  <!-- TODO -->
+            <%= content_tag :li, link_to(icon('caret-right', 'Contact Us'), contacts_index_path) %>  <!-- TODO -->
             <%= content_tag :li, link_to(icon('caret-right', 'Privacy Policy'), "#") %>  <!-- TODO -->
             <%= content_tag :li, link_to(icon('caret-right', 'Terms & Conditions'), "#") %>  <!-- TODO -->
           </ul>
@@ -38,12 +38,13 @@
               <%= icon('map-marker', nil, class:'pull-left') %>
               <span class="adr-group pull-left">
                 <span class="street-address">EDUCO</span><br>
-                <span class="region">6820 Auto Club Road, Suite T</span><br>
+                <span class="street-address">6820 Auto Club Road</span><br>
+                <span class="street-address">Suite T</span><br>
                 <span class="postal-code">Bloomington, MN  55438</span><br>
                 <span class="country-name">USA</span>
               </span>
             </p>
-            <p class="tel col-md-12 col-sm-4"><%= icon('phone', '000-000-0000') %></p>  <!-- TODO -->
+            <p class="tel col-md-12 col-sm-4"><%= icon('phone', '952-996-1451') %></p>  <!-- TODO -->
             <p class="email col-md-12 col-sm-4">
                 <%= icon('envelope') %>
                 <%= mail_to 'inquiries@educo.com' %>    <!-- TODO -->
