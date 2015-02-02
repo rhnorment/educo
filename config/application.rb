@@ -22,8 +22,6 @@ module Educo
 
     config.autoload_paths += %W(#{config.root}/lib)
 
-    config.nav_lynx.selected_class = 'active'
-
     config.exceptions_app = self.routes
 
   end

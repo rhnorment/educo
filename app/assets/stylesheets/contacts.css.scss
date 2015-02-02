@@ -1,0 +1,17 @@
+@import 'colors';
+@import 'mixins';
+
+/* ======= Contact Page ======= */
+.contact-form {
+    .required {
+        color: $red;
+        display: inline-block;
+        font-weight: normal;
+        padding-left: 2px;
+    }
+}
+
+#map {
+    @include reset-box-sizing();
+    height: 300px;
+}

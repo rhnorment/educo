@@ -16,7 +16,6 @@ gem 'jquery-turbolinks'
 
 # HELPER GEMS:
 gem 'font-awesome-sass'
-gem 'nav_lynx'
 
 # DEVELOPMENT GEMS:
 group :development do

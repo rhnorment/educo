@@ -60,8 +60,6 @@ GEM
     mime-types (1.25.1)
     minitest (5.5.1)
     multi_json (1.10.1)
-    nav_lynx (1.1.0)
-      rails (>= 3.2.13)
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -134,7 +132,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
-  nav_lynx
   pg
   rails (= 4.1.0)
   rails_12factor

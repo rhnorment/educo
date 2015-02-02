@@ -40,16 +40,8 @@
             </header>
 
             <div class="page-content">
-              <div class="row page-row">
-                <article class="welcome col-md-8 col-sm-7">
-                  <%= yield %>                                  <!-- YIELD TO VIEW -->
-                </article>
-              </div>
+              <%= yield %>
             </div>
-
-            <aside class="page-sidebar col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">
-                <%= yield :sidebar %>                           <!-- YIELD TO CONTROLLER SIDEBAR -->
-            </aside>
 
           </div>
 
