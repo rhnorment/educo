@@ -2,13 +2,20 @@
 
   <div class="container">
 
-    <ul class="social-icons col-md-6 col-sm-6 col-xs-12 hidden-xs">
+    <ul class="social-icons col-md-6 col-sm-6 col-xs-12 hidden-xs m-t-xs">
       <%= content_tag :li, link_to(icon('twitter'), "#") %>
       <%= content_tag :li, link_to(icon('facebook'), "#") %>
       <%= content_tag :li, link_to(icon('youtube'), "#") %>
       <%= content_tag :li, link_to(icon('linkedin'), "#") %>
       <%= content_tag :li, link_to(icon('google-plus'), "#") %>
     </ul>
+
+    <form class="pull-right search-form" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search the site...">
+      </div>
+      <button type="submit" class="btn btn-theme">Go</button>
+    </form>     <!-- TODO:  IMPLEMENT SEARCH GEM -->
 
   </div>
 
@@ -24,7 +31,7 @@
 
     <ul class="menu-top navbar-right hidden-xs">
       <%= content_tag :li, link_to('Home', root_path), class:'divider' %>
-      <%= content_tag :li, link_to('FAQ', "#"), class:'divider' %>  <!-- TODO: FAQ PAGE -->
+      <%= content_tag :li, link_to('FAQ', about_faq_path), class:'divider' %>  <!-- TODO: FAQ PAGE -->
       <%= content_tag :li, link_to('Contact', "#") %>   <!-- TODO: CONTACT PAGE -->
     </ul>
 

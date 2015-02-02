@@ -20,6 +20,12 @@
         <div class="footer-col-inner">
           <h3>Join our mailing list</h3>
           <p>Subscribe to get our weekly newsletter delivered directly to your inbox</p>
+          <form class="subscribe-form">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter your email" />
+            </div>
+            <input class="btn btn-theme btn-subscribe" type="submit" value="Subscribe">
+          </form>
           <!-- TODO:  BUILD SUBSCRIPTION FORM -->
         </div>
       </div>
@@ -59,11 +65,11 @@
         Copyright &copy; 2015 EDUCO | Website by <%= link_to 'Red Sherpa LLC', 'http://www.sherpa.red', target:'_blank' %>
       </small>
       <ul class="social pull-right col-md-6 col-sm-12 col-xs-12">
-        <%= content_tag :li, link_to(icon('twitter'), "#") %>
-        <%= content_tag :li, link_to(icon('facebook'), "#") %>
-        <%= content_tag :li, link_to(icon('youtube'), "#") %>
-        <%= content_tag :li, link_to(icon('linkedin'), "#") %>
         <%= content_tag :li, link_to(icon('google-plus'), "#") %>
+        <%= content_tag :li, link_to(icon('linkedin'), "#") %>
+        <%= content_tag :li, link_to(icon('youtube'), "#") %>
+        <%= content_tag :li, link_to(icon('facebook'), "#") %>
+        <%= content_tag :li, link_to(icon('twitter'), "#") %>
       </ul>
     </div>
   </div>
