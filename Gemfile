@@ -22,6 +22,8 @@ gem 'font-awesome-sass'
 group :development do
   gem 'spring'
   gem 'sqlite3'
+  gem 'faker'
+  gem 'populator'
 end
 
 # DOCUMENTATION GEMS:
