@@ -20,4 +20,6 @@ class Event < ActiveRecord::Base
 
   validates :name, :description, :date, :start_time, :end_time, :place, :city, :state, :zip_code, presence: true
 
+  scope     :upcoming_events,           ->  { where('date > ?', Time.now).order(date: :desc).limit(3) }
+
 end
