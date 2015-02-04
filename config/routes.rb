@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get     'about/index'
   get     'about/faq'
   get     'about/leadership'
+  get     'admissions/apply_now'
   get     'contacts/index'
 
 end
