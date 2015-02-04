@@ -6,8 +6,7 @@ class AboutController < ApplicationController
 
   def faq
     @page_title = 'Frequently Asked Questions'
-    @first_faq = Faq.first
-    @other_faqs = Faq.not_first
+    @faqs = Faq.all
   end
 
 end

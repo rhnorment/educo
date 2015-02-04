@@ -2,29 +2,9 @@
 
   <article class="faq-wrapper col-md-8 col-sm-7">
 
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="faq-accordion">
 
-      <div class="panel panel-default">
-
-        <div class="panel-heading">
-
-          <h4 class="panel-title">
-            <%= link_to @first_faq.question, "#collapse-#{@first_faq.id}", data: { toggle:'collapse', parent:'#accordion' } %>
-          </h4>
-
-        </div>
-
-        <div id="collapse-<%= @first_faq.id %>" class="panel-collapse collapse in">
-
-          <div class="panel-body">
-            <%= @first_faq.answer %>
-          </div>
-
-        </div>
-
-      </div>
-
-        <% @other_faqs.each do |faq| %>
+        <% @faqs.each do |faq| %>
 
             <div class="panel panel-default">
 
@@ -32,7 +12,7 @@
 
                   <h4 class="panel-title">
                     <%= link_to faq.question, "#collapse-#{faq.id}", class:'collapsed',
-                                data: { toggle:'collapse', parent:'#accordion' } %>
+                                data: { toggle:'collapse', parent:'#faq-accordion' } %>
                   </h4>
 
                 </div>
