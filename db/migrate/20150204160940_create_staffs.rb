@@ -6,7 +6,7 @@ class CreateStaffs < ActiveRecord::Migration
       t.string :credentials
       t.text :bio
       t.string :image_file_name
-      t.string :type
+      t.string :category
       t.timestamps
     end
   end

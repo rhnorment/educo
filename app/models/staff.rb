@@ -17,7 +17,7 @@ class Staff < ActiveRecord::Base
 
   TYPES =          %w(Corporate Faculty)
 
-  validates        :name, :title, :credentials, :bio, :image_file_name, :type, presence: true
+  validates        :name, :title, :credentials, :bio, :image_file_name, :category, presence: true
 
   validates        :image_file_name,  format: { with: /\w+.(gif|jpg|png)\z/i }
 
