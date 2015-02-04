@@ -11,6 +11,7 @@ class AboutController < ApplicationController
 
   def leadership
     @page_title = 'Leadership'
+    @leaders = Staff.corporate
   end
 
 end

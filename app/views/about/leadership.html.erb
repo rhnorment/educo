@@ -2,17 +2,29 @@
 
   <div class="team-wrapper col-md-8 col-sm-7">
 
+    <% @leaders.each do |leader| %>
 
+        <div class="row page-row">
 
-    <div class="row page-row">
+            <figure class="thumb col-md-3 col-sm-4 col-xs-6">
 
-      <figure class="thumb col-md-3 col-sm-4 col-xs-6">
+                <%= image_tag leader.image_file_name, class:'img-responsive' %>
 
+            </figure>
 
+            <div class="details col-md-9 col-sm-8 col-xs-6">
 
-      </figure>
+              <%= content_tag :h3, leader.name, class:'title' %>
 
-    </div>
+              <%= content_tag :h4, leader.title %>
+
+              <%= content_tag :p, leader.bio %>
+
+            </div>
+
+        </div>
+
+    <% end %>
 
   </div>
 

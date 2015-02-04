@@ -8,7 +8,7 @@
 #  credentials     :string(255)
 #  bio             :text
 #  image_file_name :string(255)
-#  type            :string(255)
+#  category        :string(255)
 #  created_at      :datetime
 #  updated_at      :datetime
 #
@@ -21,6 +21,10 @@ class Staff < ActiveRecord::Base
 
   validates        :image_file_name,  format: { with: /\w+.(gif|jpg|png)\z/i }
 
-  validates        :type, inclusion: { in: TYPES }
+  validates        :category,         inclusion: { in: TYPES }
+
+  scope            :corporate,        -> { Staff.where('category = ?', 'Corporate') }
+
+  scope            :faculty,          -> { Staff.where('category = ?', 'Faculty') }
 
 end
