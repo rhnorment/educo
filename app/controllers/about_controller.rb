@@ -9,4 +9,8 @@ class AboutController < ApplicationController
     @faqs = Faq.all
   end
 
+  def leadership
+    @page_title = 'Leadership'
+  end
+
 end

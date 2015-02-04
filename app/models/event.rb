@@ -6,8 +6,8 @@
 #  name        :string(255)
 #  description :text
 #  date        :date
-#  start_time  :time
-#  end_time    :time
+#  start_time  :string(255)
+#  end_time    :string(255)
 #  place       :string(255)
 #  city        :string(255)
 #  state       :string(255)
