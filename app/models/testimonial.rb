@@ -13,6 +13,8 @@
 
 class Testimonial < ActiveRecord::Base
 
+  mount_uploader    :image_file_name,   ImageUploader
+
   validates         :name,  :location,  :description, :image_file_name, presence: true
 
   validates         :description,       length: { maximum: 250 }
