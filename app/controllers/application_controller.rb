@@ -3,18 +3,18 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_filter     :set_events,  :set_testimonials
+  before_filter     :set_events_collection,  :set_testimonials_collection
 
   private
 
-    def set_events
-      @events = Event.upcoming_events
+    def set_events_collection
+      @events_collection = Event.upcoming_events
     end
-    helper_method   :set_events
+    helper_method   :set_events_collection
 
-    def set_testimonials
-      @testimonials = Testimonial.all
+    def set_testimonials_collection
+      @testimonials_collection = Testimonial.all
     end
-    helper_method   :set_testimonials
+    helper_method   :set_testimonials_collection
 
 end

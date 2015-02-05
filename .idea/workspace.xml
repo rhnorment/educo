@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71bcb3c1-9fc6-49a3-b98b-935dcde50ab2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_events.erb" afterPath="$PROJECT_DIR$/app/views/shared/_events.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_testimonials.erb" afterPath="$PROJECT_DIR$/app/views/shared/_testimonials.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/testimonial.rb" afterPath="$PROJECT_DIR$/app/admin/testimonial.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/testimonial.rb" afterPath="$PROJECT_DIR$/app/models/testimonial.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="educo.iws" />
@@ -77,7 +77,6 @@
         <option value="$PROJECT_DIR$/app/models/faq.rb" />
         <option value="$PROJECT_DIR$/app/models/event.rb" />
         <option value="$PROJECT_DIR$/app/views/about/_sidebar.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_events.erb" />
         <option value="$PROJECT_DIR$/app/views/contacts/_sidebar.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/vendor/assets/javascripts/main.js" />
@@ -104,10 +103,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20150205163922_change_image_file_fields.rb" />
         <option value="$PROJECT_DIR$/app/models/staff.rb" />
         <option value="$PROJECT_DIR$/app/views/about/leadership.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/admin/staff.rb" />
         <option value="$PROJECT_DIR$/app/admin/testimonial.rb" />
         <option value="$PROJECT_DIR$/app/models/testimonial.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_events.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_testimonials.erb" />
       </list>
     </option>
@@ -645,7 +645,11 @@
       <created>1423157150971</created>
       <updated>1423157150971</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added file upload capability for admin.">
+      <created>1423158612244</created>
+      <updated>1423158612244</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -835,13 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_events.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4338843" vertical-offset="0" max-vertical-offset="726">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contacts/_sidebar.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20661157" vertical-offset="0" max-vertical-offset="726">
@@ -997,14 +994,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42432815" vertical-offset="0" max-vertical-offset="707">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/about/leadership.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4612006" vertical-offset="0" max-vertical-offset="683">
@@ -1082,10 +1071,26 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14227642" vertical-offset="0" max-vertical-offset="738">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_events.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.042016808" vertical-offset="0" max-vertical-offset="714">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_testimonials.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2857143" vertical-offset="96" max-vertical-offset="810">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.19327731" vertical-offset="72" max-vertical-offset="810">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding />
         </state>
       </provider>
