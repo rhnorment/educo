@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hklycaloj
+  api_key: '284633761615815'
+  api_secret: aP9vCgpb3yq_aWxj4FYNSa_siTk
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hklycaloj
+  api_key: '284633761615815'
+  api_secret: aP9vCgpb3yq_aWxj4FYNSa_siTk
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hklycaloj
+  api_key: '284633761615815'
+  api_secret: aP9vCgpb3yq_aWxj4FYNSa_siTk
+  enhance_image_tag: true
+  static_image_support: false

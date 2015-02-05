@@ -15,6 +15,8 @@ gem 'jquery-turbolinks'
 # APPLICATION GEMS:
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
+gem 'carrierwave'
+gem 'cloudinary'
 
 # HELPER GEMS:
 gem 'font-awesome-sass'

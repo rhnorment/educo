@@ -15,9 +15,11 @@
 
 class Staff < ActiveRecord::Base
 
+  mount_uploader   :image_file_name,  ImageUploader
+
   TYPES =          %w(Corporate Faculty)
 
-  validates        :name, :title, :credentials, :bio, :image_file_name, :category, presence: true
+  validates        :name, :title, :credentials, :bio, :category, :image_file_name, presence: true
 
   validates        :image_file_name,  format: { with: /\w+.(gif|jpg|png)\z/i }
 
