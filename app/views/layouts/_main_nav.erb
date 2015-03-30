@@ -24,9 +24,9 @@
 
             <ul class="dropdown-menu">
 
-              <%= content_tag :li, link_to('About Us', about_index_path) %>
-              <%= content_tag :li, link_to('Leadership', about_leadership_path) %>
-              <%= content_tag :li, link_to('FAQ', about_faq_path) %>
+              <%= content_tag :li, link_to('About Us', '#') %>
+              <%= content_tag :li, link_to('Leadership', '#') %>
+              <%= content_tag :li, link_to('FAQ', '#') %>
 
             </ul>
 
@@ -40,14 +40,14 @@
 
             <ul class="dropdown-menu">
 
-                <%= content_tag :li, link_to('Apply Now', admissions_apply_now_path) %>
+                <%= content_tag :li, link_to('Apply Now', '#') %>
 
             </ul>
 
         <% end %>
 
         <!-- CONTACTS CONTROLLER TREE -->
-        <%= content_tag :li, link_to('Contact', contacts_index_path), class:"nav-item #{is_active?('contacts')}" %>
+        <%= content_tag :li, link_to('Contact', '#'), class:"nav-item #{is_active?('contacts')}" %>
 
     </ul>
 

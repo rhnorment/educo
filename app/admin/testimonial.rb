@@ -10,7 +10,7 @@ ActiveAdmin.register Testimonial do
     column  :location
     column  :description
     column  :image_file_name do |photo|
-      image_tag photo.image_file_name_url, width: 100, height: 100
+      image_tag photo.image_file_name_url, class: 'profile'
     end
     actions
   end
@@ -33,7 +33,7 @@ ActiveAdmin.register Testimonial do
       row :location
       row :description
       row :image_file_name do |photo|
-        image_tag photo.image_file_name_url, width: 170, height: 210
+        image_tag photo.image_file_name_url, class: 'profile'
       end
     end
     active_admin_comments
