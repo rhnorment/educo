@@ -28,6 +28,17 @@ group :development do
   gem 'populator'
 end
 
+# TEST GEMS
+group :test do
+  gem 'capybara'
+end
+
+# TEST & DEVELOPMENT GEMS
+group :test, :development do
+  gem 'minitest'
+  gem 'rspec-rails', '~> 2.14.0.rc1'
+end
+
 # DOCUMENTATION GEMS:
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
