@@ -8,9 +8,9 @@
         <div class="footer-col-inner">
           <h3>About</h3>
           <ul>
+            <%= content_tag :li, link_to(icon('caret-right', 'About Rivendell Program'), about_path) %>
             <%= content_tag :li, link_to(icon('caret-right', 'About San Diego Christian'), @sdc_url, target:'_blank') %>
             <%= content_tag :li, link_to(icon('caret-right', 'About WASC'), @wasc_url, target:'_blank') %>
-            <%= content_tag :li, link_to(icon('caret-right', 'About Rivendell Program'), about_path) %>
             <%= content_tag :li, link_to(icon('caret-right', 'Contact Us'), new_contact_path) %>
           </ul>
         </div>
