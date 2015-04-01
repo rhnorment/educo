@@ -3,11 +3,10 @@
   <div class="container">
 
     <ul class="social-icons col-md-6 col-sm-6 col-xs-12 hidden-xs m-t-xs">
-      <%= content_tag :li, link_to(icon('twitter'), "#") %>
-      <%= content_tag :li, link_to(icon('facebook'), "#") %>
-      <%= content_tag :li, link_to(icon('youtube'), "#") %>
-      <%= content_tag :li, link_to(icon('linkedin'), "#") %>
-      <%= content_tag :li, link_to(icon('google-plus'), "#") %>
+      <%= content_tag :li, link_to(icon('twitter'), @twitter_url, target:'_blank') %>
+      <%= content_tag :li, link_to(icon('facebook'), @facebook_url, target:'_blank') %>
+      <%= content_tag :li, link_to(icon('pinterest'), @pinterest_url, target:'_blank') %>
+      <%= content_tag :li, link_to(icon('google-plus'), @google_plus_url, target:'_blank') %>
     </ul>
 
     <form class="pull-right search-form" role="search">
@@ -24,22 +23,22 @@
 <div class="header-main container">
 
   <h1 class="logo col-md-4 col-sm-4">
-    <%= link_to 'EDUCO', root_path %>
+    <%= link_to @company_name, root_path %>
   </h1>
 
   <div class="info col-md-8 col-sm-8">
 
     <ul class="menu-top navbar-right hidden-xs">
       <%= content_tag :li, link_to('Home', root_path), class:'divider' %>
-      <%= content_tag :li, link_to('FAQ', '#'), class:'divider' %>  <!-- TODO: FAQ PAGE -->
-      <%= content_tag :li, link_to('Contact', '#') %>   <!-- TODO: CONTACT PAGE -->
+      <%= content_tag :li, link_to('FAQ', about_faq_path), class:'divider' %>
+      <%= content_tag :li, link_to('Contact', new_contact_path) %>
     </ul>
 
     <%= tag :br %>
 
     <div class="contact pull-right">
-      <%= content_tag :p, icon('phone', 'Call us today 0800 123 4567'), class:'phone' %>    <!-- TODO: PHONE -->
-      <%= content_tag :p, icon('envelope', 'inquiries@educo.com'), class:'email' %>     <!-- TODO: EMAIL -->
+      <%= content_tag :p, icon('phone', "Call us today at #{@phone_number}"), class:'phone' %>
+      <%= content_tag :p, icon('envelope', @inquiry_email), class:'email' %>
     </div>
 
   </div>

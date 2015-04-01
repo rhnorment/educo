@@ -3,10 +3,19 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  # before_filter     :set_events_collection,  :set_testimonials_collection
+  before_filter     :set_global_vars
 
   private
 
+    def set_global_vars
+      @company_name = 'Rivendell Program'
+      @phone_number = '952-996-1451'
+      @inquiry_email = 'inquiries@rivendellsanctuary.com'
+      @twitter_url = 'https://twitter.com/RivendellSanct'
+      @facebook_url = 'https://www.facebook.com/rivendellsanctuary'
+      @pinterest_url = 'https://www.pinterest.com/rivendellsanct/'
+      @google_plus_url = 'https://plus.google.com/108374067538365440572/posts'
+    end
     # def set_events_collection
      # @events_collection = Event.upcoming_events
     # end

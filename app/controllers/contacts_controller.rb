@@ -1,7 +1,11 @@
 class ContactsController < ApplicationController
 
-  def index
+  def new
     @page_title = 'Contact'
+  end
+
+  def create
+
   end
 
 end
