@@ -8,10 +8,10 @@
         <div class="footer-col-inner">
           <h3>About</h3>
           <ul>
-            <%= content_tag :li, link_to(icon('caret-right', 'About Us'), '#') %>
-            <%= content_tag :li, link_to(icon('caret-right', 'Contact Us'), '#') %>  <!-- TODO -->
-            <%= content_tag :li, link_to(icon('caret-right', 'Privacy Policy'), "#") %>  <!-- TODO -->
-            <%= content_tag :li, link_to(icon('caret-right', 'Terms & Conditions'), "#") %>  <!-- TODO -->
+            <%= content_tag :li, link_to(icon('caret-right', 'About San Diego Christian'), @sdc_url, target:'_blank') %>
+            <%= content_tag :li, link_to(icon('caret-right', 'About WASC'), @wasc_url, target:'_blank') %>
+            <%= content_tag :li, link_to(icon('caret-right', 'About Rivendell Program'), about_path) %>
+            <%= content_tag :li, link_to(icon('caret-right', 'Contact Us'), new_contact_path) %>
           </ul>
         </div>
       </div>
@@ -37,17 +37,17 @@
             <p class="adr clearfix col-md-12 col-sm-4">
               <%= icon('map-marker', nil, class:'pull-left') %>
               <span class="adr-group pull-left">
-                <span class="street-address">EDUCO</span><br>
+                <span class="street-address"><%= @company_name %></span><br>
                 <span class="street-address">6820 Auto Club Road</span><br>
                 <span class="street-address">Suite T</span><br>
                 <span class="postal-code">Bloomington, MN  55438</span><br>
                 <span class="country-name">USA</span>
               </span>
             </p>
-            <p class="tel col-md-12 col-sm-4"><%= icon('phone', '952-996-1451') %></p>  <!-- TODO -->
+            <p class="tel col-md-12 col-sm-4"><%= icon('phone', @phone_number) %></p>
             <p class="email col-md-12 col-sm-4">
                 <%= icon('envelope') %>
-                <%= mail_to 'inquiries@educo.com' %>    <!-- TODO -->
+                <%= mail_to @inquiry_email %>
             </p>
           </div>
         </div>
@@ -63,14 +63,13 @@
   <div class="container">
     <div class="row">
       <small class="copyright col-md-6 col-sm-12 col-xs-12">
-        Copyright &copy; 2015 EDUCO | Website by <%= link_to 'Red Sherpa LLC', 'http://www.sherpa.red', target:'_blank' %>
+        Copyright &copy; 2015 Rivendell Education Company | Website by <%= link_to 'Red Sherpa LLC', 'http://www.sherpa.red', target:'_blank' %>
       </small>
       <ul class="social pull-right col-md-6 col-sm-12 col-xs-12">
-        <%= content_tag :li, link_to(icon('google-plus'), "#") %>
-        <%= content_tag :li, link_to(icon('linkedin'), "#") %>
-        <%= content_tag :li, link_to(icon('youtube'), "#") %>
-        <%= content_tag :li, link_to(icon('facebook'), "#") %>
-        <%= content_tag :li, link_to(icon('twitter'), "#") %>
+        <%= content_tag :li, link_to(icon('google-plus'), @google_plus_url, target:'_blank') %>
+        <%= content_tag :li, link_to(icon('pinterest'), @pinterest_url, target:'_blank') %>
+        <%= content_tag :li, link_to(icon('facebook'), @facebook_url, target:'_blank') %>
+        <%= content_tag :li, link_to(icon('twitter'), @twitter_url, target:'_blank') %>
       </ul>
     </div>
   </div>
