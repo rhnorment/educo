@@ -25,20 +25,6 @@
 
     <div class="page-wrapper">
 
-      <header class="page-heading clearfix">
-        <h1 class="heading-title pull-left"><%= @page_title %></h1>
-        <div class="breadcrumbs pull-right">
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-label">You are here:</li>
-            <li>
-              <%= link_to 'Home', root_path %>
-              <%= icon 'angle-right' %>
-            </li>
-            <li><%= @page_title %>
-          </ul>
-        </div>
-      </header>
-
       <div class="page-content">
         <%= yield %>
       </div>

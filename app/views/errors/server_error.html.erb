@@ -1,2 +1,9 @@
-<h1>Errors#server_error</h1>
-<p>Find me in app/views/errors/server_error.html.erb</p>
+<%= content_tag :h1, @page_title, class:'text-danger text-center' %>
+
+<%= content_tag :p, @message, class:'lead text-center' %>
+
+<p class="text-center">
+
+  <%= link_to 'OK', :back, class:'btn btn-lg, btn-primary' %>
+
+</p>
