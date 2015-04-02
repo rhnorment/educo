@@ -19,3 +19,5 @@ spec/controllers/errors_controller_spec.rb
 spec/controllers/pages_controller_spec.rb
 # Ignore .idea folder
 .idea
+# Ignore spec folder
+spec
