@@ -14,3 +14,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+public/uploads/tmp/1423158076-1711-7624/contacts.js.coffee
+spec/controllers/errors_controller_spec.rb
+spec/controllers/pages_controller_spec.rb

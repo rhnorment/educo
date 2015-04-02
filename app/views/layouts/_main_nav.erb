@@ -18,7 +18,7 @@
       <li class="nav-item dropdown">    <!-- JOURNEY MENU SECTION -->
 
         <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown', hover:'dropdown', delay:'0' } do %>
-            Your Journey  <%= icon('angle-down') %>
+            your journey  <%= icon('angle-down') %>
         <% end %>
 
         <ul class="dropdown-menu">
@@ -29,17 +29,56 @@
           <%= content_tag :li, link_to('Last term', journey_term4_path) %>
         </ul>
 
+      </li>
 
+      <li class="nav-item dropdown">    <!-- SEEKING TRUTH MENU SECTION -->
 
+        <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown', hover:'dropdown', delay:'0' } do %>
+            seeking truth  <%= icon('angle-down') %>
+        <% end %>
+
+        <ul class="dropdown-menu">
+          <%= content_tag :li, link_to('Start here', seeking_truth_path) %>
+          <%= content_tag :li, link_to('Pedagogy', seeking_truth_pedagogy_path) %>
+          <%= content_tag :li, link_to('Curriculum', seeking_truth_curriculum_path) %>
+          <%= content_tag :li, link_to('Method', seeking_truth_method_path) %>
+        </ul>
 
       </li>
 
+      <li class="nav-item dropdown">    <!-- BUILDING CHARACTER MENU SECTION -->
 
+        <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown', hover:'dropdown', delay:'0' } do %>
+            building character  <%= icon('angle-down') %>
+        <% end %>
 
+        <ul class="dropdown-menu">
+          <%= content_tag :li, link_to('Start here', building_character_path) %>
+          <%= content_tag :li, link_to('Residential living', building_character_residential_living_path) %>
+          <%= content_tag :li, link_to('Experiential learning', building_character_experiential_learning_path) %>
+          <%= content_tag :li, link_to('Sacrificial loving', building_character_sacrificial_loving_path) %>
+        </ul>
 
+      </li>
+
+      <li class="nav-item dropdown">    <!-- ADMISSIONS MENU SECTION -->
+
+        <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown', hover:'dropdown', delay:'0' } do %>
+            admissions  <%= icon('angle-down') %>
+        <% end %>
+
+        <ul class="dropdown-menu">
+          <%= content_tag :li, link_to('Start here', admissions_path) %>
+          <%= content_tag :li, link_to('Student attributes', admissions_student_attributes_path) %>
+          <%= content_tag :li, link_to('Process', admissions_admin_process_path) %>
+          <%= content_tag :li, link_to('Tuition & fees', admissions_tuition_path) %>
+          <%= content_tag :li, link_to('Financial aid', admissions_financial_aid_path) %>
+          <%= content_tag :li, link_to('Apply now', admissions_apply_now_path) %>
+        </ul>
+
+      </li>
 
     </ul>
-
 
   </div>
 
