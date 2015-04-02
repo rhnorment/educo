@@ -2,7 +2,7 @@
 
   <div class="container">
 
-    <ul class="social-icons col-md-6 col-sm-6 col-xs-12 hidden-xs m-t-xs">
+    <ul id="social-nav-top" class="social-icons col-md-6 col-sm-6 col-xs-12 hidden-xs m-t-xs">
       <%= content_tag :li, link_to(icon('twitter'), @twitter_url, target:'_blank') %>
       <%= content_tag :li, link_to(icon('facebook'), @facebook_url, target:'_blank') %>
       <%= content_tag :li, link_to(icon('pinterest'), @pinterest_url, target:'_blank') %>
@@ -28,7 +28,7 @@
 
   <div class="info col-md-8 col-sm-8">
 
-    <ul class="menu-top navbar-right hidden-xs">
+    <ul id="header-nav" class="menu-top navbar-right hidden-xs">
       <%= content_tag :li, link_to('Home', root_path), class:'divider' %>
       <%= content_tag :li, link_to('FAQ', about_faq_path), class:'divider' %>
       <%= content_tag :li, link_to('Contact', new_contact_path) %>
