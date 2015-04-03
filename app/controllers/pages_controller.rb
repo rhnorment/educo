@@ -1,12 +1,19 @@
 class PagesController < ApplicationController
 
+  add_breadcrumb        'Home',     :root_path
+
   def home
+    @page_title = 'Welcome to Rivendell'
   end
 
   def about
+    @page_title = 'About us'
+    add_breadcrumb  'About us', :about_path
   end
 
   def leadership
+    @page_title = 'Leadership'
+    add_breadcrumb  'Leadership', :about_leadership_path
   end
 
   def investors
