@@ -33,7 +33,17 @@
             </header>
 
             <div class="page-content">
-              <%= yield %>
+              <div class="row page-row">
+
+                <article class="welcome col-md-8 col-sm-7">
+                  <%= yield %>
+                </article>
+
+                <aside class="page-sidebar col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">
+                  <%= render 'sidebar' %>
+                </aside>
+
+              </div>
             </div>
 
           </div>
