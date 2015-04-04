@@ -21,6 +21,7 @@ gem 'cloudinary'
 # HELPER GEMS:
 gem 'font-awesome-sass'
 gem 'breadcrumbs_on_rails'
+gem 'holder_rails'
 
 # DEVELOPMENT GEMS:
 group :development do

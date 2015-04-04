@@ -12,7 +12,9 @@ class PagesController < ApplicationController
   end
 
   def leadership
-    @page_title = 'Leadership'
+    @page_title = 'Leadership Team'
+    @page_class = 'team-wrapper'
+    @leadership = Staff.corporate
     add_breadcrumb  @page_title, :about_leadership_path
   end
 
@@ -28,6 +30,7 @@ class PagesController < ApplicationController
 
   def faculty
     @page_title = 'Our faculty'
+    @faculty = Staff.faculty
     add_breadcrumb  @page_title, :about_faculty_path
   end
 

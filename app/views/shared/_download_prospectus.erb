@@ -1,7 +1,5 @@
-<h3 class="title">Why Educo?</h3>
+<%= content_tag :h3, "Why the #{@company_name}", class:'title' %>
 
-<p>
-  Discover why EDUCO is the right choice for your higher education:
-</p>
+<%= content_tag :p, "Discover why the #{@company_name} is the right choice for your higher education:" %>
 
-<%= link_to icon('download', 'Download prospectus'), "#", class:'btn btn-theme' %>
+<%= link_to icon('download', 'Download prospectus'), '#', class:'btn btn-theme' %>

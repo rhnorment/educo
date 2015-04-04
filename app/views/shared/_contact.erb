@@ -4,9 +4,9 @@
   Contact us to schedule a visit:
 </p>
 
-<%= content_tag :p, icon('phone', '952-996-1451'), class:'tel' %>
+<%= content_tag :p, icon('phone', @phone_number), class:'tel' %>
 
 <p class="email">
   <%= icon('envelope') %>
-  <%= mail_to 'inquiries@educo.com' %>
+  <%= mail_to @inquiry_email %>
 </p>
