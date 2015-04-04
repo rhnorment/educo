@@ -1,0 +1,19 @@
+<section class="widget">
+
+  <ul class="nav">
+
+    <%= nav_link_to 'About us', about_path, {}, { wrapper: 'li' } %>
+
+    <%= nav_link_to 'Leadership team', about_leadership_path, {}, { wrapper: 'li' } %>
+
+    <%= nav_link_to 'Faculty', about_faculty_path, {}, { wrapper: 'li' } %>
+
+    <%= nav_link_to 'Frequently asked questions', about_faq_path, {}, { wrapper: 'li' } %>
+
+    <%= nav_link_to 'Rivendell Foundation', about_foundation_path, {}, { wrapper: 'li' } %>
+
+  </ul>
+
+</section>
+
+<%= yield :page_sidebar_content %>

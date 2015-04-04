@@ -3,34 +3,43 @@ class PagesController < ApplicationController
   add_breadcrumb        'Home',     :root_path
 
   def home
+    render layout: 'landing'
     @page_title = 'Welcome to Rivendell'
   end
 
   def about
     @page_title = 'About us'
+    @page_class = 'welcome'
+    @sidebar = 'about'
     add_breadcrumb  @page_title, :about_path
   end
 
   def leadership
     @page_title = 'Leadership Team'
     @page_class = 'team-wrapper'
+    @sidebar = 'about'
     @leadership = Staff.corporate
     add_breadcrumb  @page_title, :about_leadership_path
   end
 
   def investors
     @page_title = 'Our investors'
+    @page_class = 'team-wrapper'
+    @sidebar = 'about'
     add_breadcrumb  @page_title, :about_investor_path
   end
 
   def foundation
     @page_title = 'Rivendell Foundation'
+    @page_class = 'welcome'
+    @sidebar = 'about'
     add_breadcrumb @page_title, :about_foundation_path
   end
 
   def faculty
     @page_title = 'Our faculty'
     @page_class = 'team-wrapper'
+    @sidebar = 'about'
     @faculty = Staff.faculty
     add_breadcrumb  @page_title, :about_faculty_path
   end
@@ -38,6 +47,7 @@ class PagesController < ApplicationController
   def faq
     @page_title = 'Frequently asked questions'
     @page_class = 'faq-wrapper'
+    @sidebar = 'about'
     @faqs = Faq.all
     add_breadcrumb  @page_title, :about_faq_path
   end
