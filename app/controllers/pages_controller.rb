@@ -36,6 +36,8 @@ class PagesController < ApplicationController
 
   def faq
     @page_title = 'Frequently asked questions'
+    @page_class = 'faq-wrapper'
+    @faqs = Faq.all
     add_breadcrumb  @page_title, :about_faq_path
   end
 
