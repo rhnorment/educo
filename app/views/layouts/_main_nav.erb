@@ -15,23 +15,23 @@
 
     <ul class="nav navbar-nav">
 
-      <li id="journey-nav" class="nav-item dropdown">    <!-- JOURNEY MENU SECTION -->
+      <li id="journey-nav" class="<%= current_branch('journey') %> nav-item dropdown">    <!-- JOURNEY MENU SECTION -->
 
-        <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown', hover:'dropdown', delay:'0' } do %>
+        <%= link_to nil, class:'dropdown-toggle', data: { toggle:'dropdown', hover:'dropdown', delay:'0' } do %>
             your journey  <%= icon('angle-down') %>
         <% end %>
 
         <ul class="dropdown-menu">
-          <%= content_tag :li, link_to('Start here', journey_path) %>
-          <%= content_tag :li, link_to('First term', journey_term1_path) %>
-          <%= content_tag :li, link_to('Second term', journey_term2_path) %>
-          <%= content_tag :li, link_to('Third term', journey_term3_path) %>
-          <%= content_tag :li, link_to('Last term', journey_term4_path) %>
+          <%= nav_link_to 'Start here', journey_path, {}, { wrapper:'li' } %>
+          <%= nav_link_to 'First term', journey_term1_path, {}, { wrapper:'li' } %>
+          <%= nav_link_to 'Second term', journey_term2_path, {}, { wrapper:'li' } %>
+          <%= nav_link_to 'Third term', journey_term3_path, {}, { wrapper:'li' } %>
+          <%= nav_link_to 'Last term', journey_term4_path, {}, { wrapper:'li' } %>
         </ul>
 
       </li>
 
-      <li id="seeking-truth-nav" class="nav-item dropdown">    <!-- SEEKING TRUTH MENU SECTION -->
+      <li id="seeking-truth-nav" class="<%= current_branch('seeking_truth') %> nav-item dropdown">    <!-- SEEKING TRUTH MENU SECTION -->
 
         <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown', hover:'dropdown', delay:'0' } do %>
             seeking truth  <%= icon('angle-down') %>
@@ -46,7 +46,7 @@
 
       </li>
 
-      <li id="building-character-nav" class="nav-item dropdown">    <!-- BUILDING CHARACTER MENU SECTION -->
+      <li id="building-character-nav" class="<%= current_branch('building_character') %> nav-item dropdown">    <!-- BUILDING CHARACTER MENU SECTION -->
 
         <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown', hover:'dropdown', delay:'0' } do %>
             building character  <%= icon('angle-down') %>
@@ -61,7 +61,7 @@
 
       </li>
 
-      <li id="admissions-nav" class="nav-item dropdown">    <!-- ADMISSIONS MENU SECTION -->
+      <li id="admissions-nav" class="<%= current_branch('admissions') %> nav-item dropdown">    <!-- ADMISSIONS MENU SECTION -->
 
         <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown', hover:'dropdown', delay:'0' } do %>
             admissions  <%= icon('angle-down') %>
