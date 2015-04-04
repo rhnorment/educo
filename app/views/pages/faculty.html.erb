@@ -1,2 +1,22 @@
-<h1>Pages#faculty</h1>
-<p>Find me in app/views/pages/faculty.html.erb</p>
+
+<% @faculty.each do |member| %>
+
+    <div class="row page-row">
+
+      <figure class="thumb col-md-3 col-sm-4 col-xs-6">
+        <%= cl_image_tag member.image_file_name_url %>
+      </figure>
+
+      <div class="details col-md-9 col-sm-8 col-xs-6">
+
+        <%= content_tag :h3, member.name, class:'title' %>
+
+        <%= content_tag :h4, member.title %>
+
+        <%= content_tag :p, member.bio %>
+
+      </div>
+
+    </div>
+
+<% end %>

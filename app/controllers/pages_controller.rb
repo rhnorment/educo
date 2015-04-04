@@ -30,6 +30,7 @@ class PagesController < ApplicationController
 
   def faculty
     @page_title = 'Our faculty'
+    @page_class = 'team-wrapper'
     @faculty = Staff.faculty
     add_breadcrumb  @page_title, :about_faculty_path
   end
