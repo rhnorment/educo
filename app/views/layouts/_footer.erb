@@ -19,14 +19,15 @@
       <div class="footer-col col-md-6 col-sm-8 newsletter">
         <div class="footer-col-inner">
           <h3>Join our mailing list</h3>
-          <p>Subscribe to get our weekly newsletter delivered directly to your inbox</p>
-          <form class="subscribe-form">
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Enter your email" />
-            </div>
-            <input class="btn btn-theme btn-subscribe" type="submit" value="Subscribe">
-          </form>
-          <!-- TODO:  BUILD SUBSCRIPTION FORM -->
+          <p>Subscribe to get our monthly newsletter delivered directly to your inbox</p>
+
+          <%= form_tag subscriptions_path, id:'subscription-form', class:'subscribe-form' do %>
+              <div class="form-group">
+                <%= email_field_tag :email, nil, class:'form-control', placeholder: 'Enter your email address' %>
+              </div>
+              <%= submit_tag 'Subscribe', class:'btn btn-theme btn-subscribe' %>
+          <% end %>
+
         </div>
       </div>
 

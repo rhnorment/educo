@@ -15,6 +15,7 @@
 //= require jquery.turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap-hover-dropdown.min
+//= require bootstrapValidator.min
 //= require holder
 //= require main
 //= require turbolinks

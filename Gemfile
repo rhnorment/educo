@@ -17,11 +17,13 @@ gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'carrierwave'
 gem 'cloudinary'
+gem 'infusionsoft'
 
 # HELPER GEMS:
 gem 'font-awesome-sass'
 gem 'nav_lynx'
 gem 'breadcrumbs_on_rails'
+gem 'bootstrap-validator-rails'
 gem 'holder_rails'
 
 # DEVELOPMENT GEMS:

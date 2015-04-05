@@ -9,12 +9,7 @@
       <%= content_tag :li, link_to(icon('google-plus'), @google_plus_url, target:'_blank') %>
     </ul>
 
-    <form class="pull-right search-form" role="search">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search the site...">
-      </div>
-      <button type="submit" class="btn btn-theme">Go</button>
-    </form>     <!-- TODO:  IMPLEMENT SEARCH GEM -->
+    <%= link_to 'Apply now', admissions_apply_now_path, class:'btn btn-theme pull-right navbar-btn' %>
 
   </div>
 
