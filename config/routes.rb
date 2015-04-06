@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get     '/about/faq'                                =>  'pages#faq'
 
+  get     '/about/accreditation'                      =>  'pages#accreditation'
+
   get     '/journey'                                  =>  'pages#journey'
 
   get     '/journey/term1'                            =>  'pages#term1'

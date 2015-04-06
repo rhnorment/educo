@@ -52,6 +52,13 @@ class PagesController < ApplicationController
     add_breadcrumb  @page_title, :about_faq_path
   end
 
+  def accreditation
+    @page_title = 'Accreditation'
+    @page_class = 'welcome'
+    @sidebar = 'about'
+    add_breadcrumb  @page_title, :about_accreditation_path
+  end
+
   def journey
     @page_title = 'Your journey'
     add_breadcrumb  @page_title, :journey_path
