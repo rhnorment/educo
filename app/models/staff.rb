@@ -7,10 +7,10 @@
 #  title           :string(255)
 #  credentials     :string(255)
 #  bio             :text
-#  image_file_name :string(255)
 #  category        :string(255)
 #  created_at      :datetime
 #  updated_at      :datetime
+#  image_file_name :photo
 #
 
 class Staff < ActiveRecord::Base

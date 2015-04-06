@@ -6,9 +6,9 @@
 #  name            :string(255)
 #  location        :string(255)
 #  description     :text
-#  image_file_name :string(255)
 #  created_at      :datetime
 #  updated_at      :datetime
+#  image_file_name :photo
 #
 
 class Testimonial < ActiveRecord::Base
