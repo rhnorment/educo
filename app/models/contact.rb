@@ -26,8 +26,8 @@ class Contact < ActiveRecord::Base
   # model validations:
   validates     :name,      :email, :topic, :message, presence: true
   validates     :email,     format: { with: /\A\S+@\S+\z/ }
-  validates     :grad_year, inclusion: { in: GRAD_YEARS }
-  validates     :source,    inclusion: { in: SOURCES }
+  validates     :grad_year, inclusion: { in: GRAD_YEARS },  allow_blank: true
+  validates     :source,    inclusion: { in: SOURCES },     allow_blank: true
 
   # callbacks:
   after_create  :send_confirmation_emails
