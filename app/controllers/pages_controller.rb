@@ -61,41 +61,57 @@ class PagesController < ApplicationController
 
   def journey
     @page_title = 'Your journey'
+    @page_class = 'welcome'
+    @sidebar = 'journey'
     add_breadcrumb  @page_title, :journey_path
   end
 
   def term1
     @page_title = 'First term'
+    @page_class = 'welcome'
+    @sidebar = 'journey'
     add_breadcrumb  @page_title, :journey_term1_path
   end
 
   def term2
     @page_title = 'Second term'
+    @page_class = 'welcome'
+    @sidebar = 'journey'
     add_breadcrumb  @page_title, :journey_term2_path
   end
 
   def term3
     @page_title = 'Third term'
+    @page_class = 'welcome'
+    @sidebar = 'journey'
     add_breadcrumb  @page_title, :journey_term3_path
   end
 
   def term4
     @page_title = 'Last term'
+    @page_class = 'welcome'
+    @sidebar = 'journey'
     add_breadcrumb  @page_title, :journey_term4_path
   end
 
   def seeking_truth
     @page_title = 'Seeking truth'
+    @page_class = 'welcome'
+    @sidebar = 'seeking_truth'
     add_breadcrumb  @page_title, :seeking_truth_path
   end
 
   def pedagogy
     @page_title = 'Pedagogy'
+    @page_class = 'welcome'
+    @sidebar = 'seeking_truth'
     add_breadcrumb  @page_title, :seeking_truth_pedagogy_path
   end
 
   def curriculum
     @page_title = 'Curriculum'
+    @page_class = 'welcome'
+    @sidebar = 'seeking_truth'
     add_breadcrumb  @page_title, :seeking_truth_curriculum_path
   end
 
@@ -106,21 +122,29 @@ class PagesController < ApplicationController
 
   def building_character
     @page_title = 'Building character'
+    @page_class = 'welcome'
+    @sidebar = 'building_character'
     add_breadcrumb  @page_title, :building_character_path
   end
 
   def residential_living
     @page_title = 'Residential living'
+    @page_class = 'welcome'
+    @sidebar = 'building_character'
     add_breadcrumb  @page_title, :building_character_residential_living_path
   end
 
   def experiential_learning
     @page_title = 'Experiential learning'
+    @page_class = 'welcome'
+    @sidebar = 'building_character'
     add_breadcrumb  @page_title, :building_character_residential_living_path
   end
 
   def sacrificial_loving
     @page_title = 'Sacrificial loving'
+    @page_class = 'welcome'
+    @sidebar = 'building_character'
     add_breadcrumb  @page_title, :building_character_sacrificial_loving_path
   end
 
