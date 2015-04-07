@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # CORE GEMS:
 gem 'rails', '4.1.0'
 gem 'bootstrap-sass'
@@ -20,10 +19,9 @@ gem 'cloudinary'
 gem 'infusionsoft'
 
 # HELPER GEMS:
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '>= 4.3.1'
 gem 'nav_lynx'
 gem 'breadcrumbs_on_rails'
-gem 'bootstrap-validator-rails'
 gem 'holder_rails'
 
 # DEVELOPMENT GEMS:
