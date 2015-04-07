@@ -150,31 +150,43 @@ class PagesController < ApplicationController
 
   def admissions
     @page_title = 'Admissions'
+    @page_class = 'welcome'
+    @sidebar = 'admissions'
     add_breadcrumb  @page_title, :admissions_path
   end
 
   def student_attributes
     @page_title = 'Student attributes'
+    @page_class = 'welcome'
+    @sidebar = 'admissions'
     add_breadcrumb  @page_title, :admissions_student_attributes_path
   end
 
   def admin_process
     @page_title = 'Process'
+    @page_class = 'welcome'
+    @sidebar = 'admissions'
     add_breadcrumb  @page_title, :admissions_admin_process_path
   end
 
   def tuition
     @page_title = 'Tuition & fees'
+    @page_class = 'welcome'
+    @sidebar = 'admissions'
     add_breadcrumb  @page_title, :admissions_tuition_path
   end
 
   def financial_aid
     @page_title = 'Financial aid'
+    @page_class = 'welcome'
+    @sidebar = 'admissions'
     add_breadcrumb  @page_title, :admissions_financial_aid_path
   end
 
   def apply_now
     @page_title = 'Apply now'
+    @page_class = 'welcome'
+    @sidebar = 'admissions'
     add_breadcrumb  @page_title, :admissions_apply_now_path
   end
 end
