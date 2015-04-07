@@ -32,7 +32,7 @@ Rails.application.routes.draw do
 
   get     '/seeking_truth/curriculum'                 =>  'pages#curriculum'
 
-  get     '/seeking_truth/method'                     =>  'pages#method'
+  get     '/seeking_truth/courses'                    =>  'pages#courses'
 
   get     '/building_character'                       =>  'pages#building_character'
 

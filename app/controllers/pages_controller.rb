@@ -115,9 +115,12 @@ class PagesController < ApplicationController
     add_breadcrumb  @page_title, :seeking_truth_curriculum_path
   end
 
-  def method
-    @page_title = 'Method'
-    add_breadcrumb  @page_title, :seeking_truth_method_path
+  def courses
+    @page_title = 'Courses'
+    @page_class = 'welcome'
+    @sidebar = 'seeking_truth'
+    @courses = Course.all.order(indentifier: :desc)
+    add_breadcrumb  @page_title, :seeking_truth_courses_path
   end
 
   def building_character
