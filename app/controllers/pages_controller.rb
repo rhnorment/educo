@@ -67,28 +67,28 @@ class PagesController < ApplicationController
   end
 
   def term1
-    @page_title = 'First term'
+    @page_title = 'First term - Theos'
     @page_class = 'welcome'
     @sidebar = 'journey'
     add_breadcrumb  @page_title, :journey_term1_path
   end
 
   def term2
-    @page_title = 'Second term'
+    @page_title = 'Second term - Cosmos'
     @page_class = 'welcome'
     @sidebar = 'journey'
     add_breadcrumb  @page_title, :journey_term2_path
   end
 
   def term3
-    @page_title = 'Third term'
+    @page_title = 'Third term - Anthropos'
     @page_class = 'welcome'
     @sidebar = 'journey'
     add_breadcrumb  @page_title, :journey_term3_path
   end
 
   def term4
-    @page_title = 'Last term'
+    @page_title = 'Final term - Ethnos'
     @page_class = 'welcome'
     @sidebar = 'journey'
     add_breadcrumb  @page_title, :journey_term4_path
@@ -102,14 +102,14 @@ class PagesController < ApplicationController
   end
 
   def pedagogy
-    @page_title = 'Pedagogy'
+    @page_title = 'Rivendell Pedagogy'
     @page_class = 'welcome'
     @sidebar = 'seeking_truth'
     add_breadcrumb  @page_title, :seeking_truth_pedagogy_path
   end
 
   def curriculum
-    @page_title = 'Curriculum'
+    @page_title = 'Rivendell Curriculum'
     @page_class = 'welcome'
     @sidebar = 'seeking_truth'
     add_breadcrumb  @page_title, :seeking_truth_curriculum_path
