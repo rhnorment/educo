@@ -119,8 +119,12 @@ class PagesController < ApplicationController
     @page_title = 'Courses'
     @page_class = 'welcome'
     @sidebar = 'seeking_truth'
-    @courses = Course.all.order(indentifier: :desc)
+    @courses = Course.all.order(identifier: :asc)
     add_breadcrumb  @page_title, :seeking_truth_courses_path
+  end
+
+  def course
+    @course = Course.find(params[:id])
   end
 
   def building_character

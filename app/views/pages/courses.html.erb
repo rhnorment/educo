@@ -1,0 +1,35 @@
+<p>Click on the course name to view a description.</p>
+
+<div class="table-responsive">
+
+  <table class="table table-boxed table-striped">
+
+    <thead>
+        <th>Identifier</th>
+        <th>Name</th>
+        <th>Term of Study</th>
+    </thead>
+
+    <tbody>
+
+        <% @courses.each do |course| %>
+
+            <tr>
+
+              <%= content_tag :td, course.identifier %>
+
+              <%= content_tag :td, link_to(course.name, course, data: { toggle:'modal', target:'#course-description' }) %>
+
+              <%= content_tag :td, course.term %>
+
+            </tr>
+
+        <% end %>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
