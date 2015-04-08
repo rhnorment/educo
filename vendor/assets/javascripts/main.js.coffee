@@ -1,4 +1,4 @@
-$(document).on('page:ready') ->
+$(document).ready ->
 
   $('[data-hover="dropdown"]').dropdownHover()
 
