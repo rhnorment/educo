@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 20150407201603) do
     t.string   "identifier"
     t.string   "name"
     t.text     "description"
+    t.string   "term"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

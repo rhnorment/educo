@@ -17,13 +17,13 @@ class Staff < ActiveRecord::Base
 
   mount_uploader   :image_file_name,  ImageUploader
 
-  TYPES =          %w(Corporate Faculty)
+  TYPES =          %w( Corporate Faculty )
 
-  validates        :name, :title, :credentials, :bio, :category, :image_file_name, presence: true
+  validates        :name, :title, :bio, presence: true
 
-  validates        :image_file_name,  format: { with: /\w+.(gif|jpg|png)\z/i }
+  validates        :image_file_name,  format: { with: /\w+.(gif|jpg|png)\z/i }, allow_blank: true
 
-  validates        :category,         inclusion: { in: TYPES }
+  validates        :category,         inclusion: { in: TYPES }, allow_blank: true
 
   scope            :corporate,        -> { Staff.where('category = ?', 'Corporate') }
 
