@@ -125,6 +125,7 @@ class PagesController < ApplicationController
 
   def course
     @course = Course.find(params[:id])
+    respond_to { |format| format.js }
   end
 
   def building_character
