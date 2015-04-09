@@ -4,6 +4,4 @@ module PagesHelper
     request.fullpath.include?(name) ? 'active' : ''
   end
 
-
-
 end

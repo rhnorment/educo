@@ -28,7 +28,20 @@
             <header class="page-heading clearfix">
               <h1 class="heading-title pull-left"><%= @page_title %></h1>
               <div class="breadcrumbs pull-right">
-                <%= render_breadcrumbs :builder => ::BootstrapBreadcrumbsBuilder %>
+                <ul class="breadcrumbs-list">
+                  <li class="breadcrumbs-label">You are here:</li>
+                  <li>
+                    <%= link_to 'Home', root_path %>
+                    <%= icon('angle-right') %>
+                  </li>
+                  <% if @section_crumb %>
+                      <li>
+                        <%= link_to @section_crumb.capitalize, "/#{@section_crumb}"  %>
+                        <%= icon('angle-right') %>
+                      </li>
+                  <% end %>
+                  <%= content_tag :li, @page_title %>
+                </ul>
               </div>
             </header>
 
