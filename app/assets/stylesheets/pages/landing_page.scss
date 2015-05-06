@@ -1,0 +1,558 @@
+@import "../includes/variables";
+@import "../includes/mixins";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: $roboto;
+	letter-spacing: 3px;
+}
+
+
+/** ----- Cross Page Data ------------------------------------------------------------------------------------------ **/
+
+.header {
+	&.landing {
+		height: 100vh;
+		min-height: 500px;
+		background:
+		linear-gradient(rgba(3, 38, 72, .6), rgba(3, 38, 72, .6)),
+		url("./../images/landing-header.jpg") top center;
+		position: relative;
+		background-size: cover;
+	}
+
+	.begin-container {
+		position: absolute;
+		bottom: 80px;
+		width: 100%;
+
+		.begin-button {
+			color: #ffffff;
+			margin: 0 auto;
+		}
+	}
+}
+
+.your-journey {
+	background-color: $gold;
+
+	* {
+		color: $blue;
+	}
+
+	h2 {
+		margin-left: 20px;
+		padding-top: 24px;
+		font-size: 26px;
+		font-weight: 600;
+		font-family: $montserrat;
+	}
+
+	.arched-circle {
+		margin: 0 auto;
+	}
+
+	.circled-number:first-of-type {
+		margin-top: 60px;
+	}
+
+	.circled-number {
+		font-size: 80px;
+
+		span {
+			padding-top: 15px;
+			line-height: 105px;
+			font-family: $geared;
+
+			&#cn1 { padding-right: 4px; }
+			&#cn4 { padding-right: 3px; }
+		}
+
+	}
+
+	.journey-level {
+		font-family: $nautilus;
+		letter-spacing: 0;
+		margin: 26px 0;
+		display: block;
+		text-align: center;
+		line-height: 24px;
+		font-size: 24px;
+	}
+
+	p.line-aside {
+		padding-bottom: 60px;
+	}
+}
+
+.cloudy-quote {
+	.bottom-triangle:after {
+		border-top-color: $gold;
+	}
+
+	background-size: cover;
+	background: url("./../images/clouds.jpg") center;
+	position: relative;
+	color: $blue;
+
+	span {
+		padding: 50px $small-side-padding;
+		display: block;
+
+		&.quote {
+			font-family: $montserrat-bold;
+			padding-top: 180px !important;
+		}
+
+		&.author {
+			font-family: $roboto-light;
+			padding-bottom: 140px;
+			font-size: 20px;
+			font-style: italic;
+			text-align: right;
+		}
+	}
+
+}
+
+.about-us {
+	background-color: $blue;
+
+	* {
+		color: #ffffff;
+		font-family: $montserrat;
+	}
+
+	p {
+		font-family: $roboto-light;
+		font-size: 12px;
+		padding-bottom: 50px;
+	}
+
+	h2 {
+		text-align: right;
+		margin-right: $small-side-padding;
+		padding: 50px 0 0;
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	.icon {
+		margin: 0 auto;
+		height: 80px;
+		width: 80px;
+		border-radius: 100%;
+		border: 4px solid $gold;
+		position: relative;
+
+		h3 {
+			span {
+				font-family: $montserrat-bold;
+				text-align: center;
+				height: 60px;
+				position: absolute;
+				width: 20px;
+				left: 0;
+				@include transition-origin(bottom center);
+
+				@for $i from 1 through 10 {
+					&.char#{$i} {
+						@include rotate(($i * 20));
+					}
+				}
+			}
+
+			&.method {
+				@include rotate(-48);
+				span {
+					top: -35px;
+					left: -1px;
+				}
+			}
+
+			&.pedagogy {
+				@include rotate(-68);
+				span {
+					top: -46px;
+					left: -8px;
+				}
+			}
+
+			&.curriculum {
+				@include rotate(-90);
+				span {
+					top: -60px;
+					left: -10px;
+				}
+			}
+		}
+
+		> span {
+			display: block;
+			width: 80px;
+			padding-right: 8px;
+			font-size: 36px;
+			height: 80px;
+			line-height: 68px;
+			text-align: center;
+			color: $gold;
+			font-family: $font-awesome;
+		}
+	}
+}
+
+.testimonials {
+	background-color: $off-white;
+	padding-bottom: 40px;
+
+	* {
+		color: $gold;
+	}
+
+	.quote {
+		&.student-quote {
+			padding: 100px $small-side-padding 50px;
+			display: block;
+		}
+	}
+
+	.lSPager {
+		a {
+			display: inline-block;
+			height: 14px !important;
+			width: 14px !important;
+			margin: 10px;
+			border: 3px solid $blue;
+			border-radius: 100%;
+
+			&.active {
+				background-color: $blue;
+			}
+		}
+	}
+}
+
+.welcome-block {
+	background:
+	linear-gradient(rgba(31, 30, 32, 0.71), rgba(31, 30, 32, 0.71)),
+	url("./../images/tree-sky.jpg") top center;
+	background-size: auto 100%;
+	border-bottom: 8px solid $blue;
+	position: relative;
+
+	.bottom-triangle:after {
+		border-top-color: $off-white !important;
+	}
+
+	* {
+		color: #ffffff;
+	}
+
+	.welcome-to {
+		display: block;
+		margin-left: 20%;
+		padding-top: 80px;
+		font-size: 20px;
+		padding-bottom: 8px;
+		letter-spacing: 2px;
+		font-family: $montserrat-bold;
+		font-weight: 700;
+	}
+
+	h3 {
+		letter-spacing: 0;
+		font-family: $nautilus;
+		font-weight: 300;
+		margin-left: 6%;
+		font-size: 78px;
+	}
+
+	.page-links {
+		padding-top: 40px;
+		padding-bottom: 60px;
+
+		.page-link {
+			padding-left: 50%;
+		}
+
+		a {
+			font-family: $montserrat;
+			margin-left: -50%;
+			font-weight: 400;
+			display: inline-block;
+			letter-spacing: 2px;
+			margin-bottom: 40px;
+			font-size: 32px;
+
+			&:before {
+				font-family: $font-awesome;
+				color: $gold;
+				padding-right: 6px;
+			}
+		}
+	}
+}
+
+.admissions {
+	background-color: $off-white;
+	padding: 40px 0;
+
+	a.border-button {
+		color: $blue;
+		font-size: 30px;
+		line-height: 58px;
+		height: 50px;
+		border-width: 4px;
+		margin: 0 auto 40px;
+	}
+
+	.admissions-web {
+		a {
+			display: table;
+			min-width: 200px;
+			text-align: center;
+			color: $gold;
+			margin: 0 auto 40px;
+			font-size: 12px;
+
+			.arched-circle {
+				background-image: url("./../images/half-circles-blue.png");
+				margin-bottom: 20px;
+
+				span {
+					font-family: $montserrat-bold;
+					text-transform: capitalize;
+					font-size: 54px;
+					padding-left: 2px;
+				}
+			}
+		}
+	}
+}
+
+.character-through {
+	background: url("./../images/field.jpg") center;
+	background-size: cover;
+	padding: 50px 0;
+
+	span {
+		font-family: $montserrat-bold;
+		color: #ffffff;
+		display: block;
+		text-align: center;
+		font-size: 38px;
+		@media (max-width: 450px) {
+			font-size: 32px;
+		}
+
+		&.sandwich {
+			display: table;
+			padding: 3px 8px 0;
+			margin: 0 auto;
+			border-top: 8px solid #ffffff;
+			border-bottom: 8px solid #ffffff;
+			font-size: 58px;
+			@media (max-width: 450px) {
+				border-width: 6px;
+				font-size: 44px;
+			}
+		}
+	}
+
+	.characterousel {
+		padding-top: 40px;
+		position: relative;
+		color: $gold;
+
+		.elements {
+			$height: 32px;
+
+			overflow: hidden;
+			height: $height;
+
+			span {
+				color: $gold;
+				letter-spacing: 0;
+				font-family: $nautilus;
+				font-size: 24px;
+				line-height: $height;
+				text-align: center;
+			}
+		}
+
+		.arrow {
+			top: 40px;
+			font-size: 20px;
+			position: absolute;
+			font-family: $font-awesome;
+			padding-top: 4px;
+
+			&.left {
+				left: 10%;
+			}
+
+			&.right {
+				right: 10%;
+			}
+		}
+	}
+}
+
+.get-connected {
+	padding-top: 100px;
+	background-color: $grey;
+
+	* {
+		font-family: $roboto-light;
+	}
+
+	h4 {
+		color: #ffffff;
+		font-family: $montserrat-bold;
+		padding: 26px $small-side-padding;
+		font-size: 26px;
+		letter-spacing: 4px;
+	}
+
+	form {
+		padding: 0 $small-side-padding;
+
+		.form-input {
+			padding: 6px 0;
+
+			input, textarea {
+				color: #ffffff;
+				background-color: transparent;
+				border: 1px solid #ffffff;
+				width: 100%;
+				padding: 8px 8px;
+				font-size: 12px;
+				line-height: 15px;
+				height: 34px;
+			}
+
+			textarea {
+				height: 140px;
+				resize: none;
+			}
+
+			&.submit-button {
+				@include clearfix;
+
+				input {
+					background-color: $gold;
+					border: none;
+					width: 25%;
+					line-height: 18px;
+					float: right;
+				}
+			}
+		}
+	}
+
+	.contact-info {
+		padding-bottom: 50px;
+
+		span {
+			color: #ffffff;
+			font-weight: 300;
+			font-size: 12px;
+			margin-top: 14px;
+			margin-left: $small-side-padding;
+			display: block;
+
+			a {
+				color: $gold;
+
+				i {
+					font-family: $font-awesome;
+					font-style: normal;
+					padding-left: 8px;
+				}
+			}
+		}
+	}
+}
+
+.map-image {
+	position: relative;
+	height: 500px;
+	background: url("https://maps.googleapis.com/maps/api/staticmap?center=44.7955724,-93.3704423&zoom=17"
+					+ "&size=1200x1200&scale=4&markers=color:red%7C%7C44.7955724,-93.3704423") center;
+	background-size: cover;
+
+	@media (min-width: 600px) {
+		background: url("./../images/map.png") center;
+	}
+
+	.map-view {
+		.border-button {
+			border-width: 2px;
+			position: absolute;
+			bottom: 20px;
+			color: $blue;
+			font-weight: 500;
+			line-height: 28px;
+			font-size: 16px;
+			margin-left: $small-side-padding;
+		}
+	}
+}
+
+.apply-section {
+	padding: 50px 0;
+	background-color: $off-white;
+
+	.border-button {
+		color: $blue;
+		margin: 0 auto;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+}
+
+
+
+
+/** ----- Multi-use Elements --------------------------------------------------------------------------------------- **/
+.arched-circle {
+	display: block;
+	background-size: contain;
+	height: 100px;
+	line-height: 100px;
+	background: url("./../images/half-circles-white.png") no-repeat center;
+	background-size: 100px 100px;
+	text-align: center;
+}
+
+.quote {
+	font-family: $montserrat;
+	line-height: 44px;
+	font-size: 21px;
+}
+
+.bottom-triangle {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 0;
+	padding-left: 50%;
+	padding-bottom: 50%;
+	overflow: hidden;
+
+	@include content-box();
+
+	&:after {
+		z-index: 300;
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		margin-left: -500px;
+		border-left: 500px solid transparent;
+		border-right: 500px solid transparent;
+		border-top: 50px solid transparent;
+	}
+}

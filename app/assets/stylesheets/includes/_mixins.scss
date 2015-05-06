@@ -1,0 +1,78 @@
+@mixin no-select() {
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+@mixin content-box() {
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}
+
+@mixin placeholder-color($color) {
+	::-webkit-input-placeholder { color: $color; }
+	:-moz-placeholder { color: $color; }
+	::-moz-placeholder { color: $color; }
+	:-ms-input-placeholder { color: $color; }
+}
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin transform($transforms) {
+	transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-moz-transform: $transforms;
+	-webkit-transform: $transforms;
+}
+
+@mixin rotate($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+@mixin transition($data) {
+	transition: $data;
+	-o-transition: $data;
+	-ms-transition: $data;
+	-moz-transition: $data;
+	-webkit-transition: $data;
+}
+
+@mixin transition-origin($data) {
+	transform-origin: $data;
+	-o-transform-origin: $data;
+	-ms-transform-origin: $data;
+	-moz-transform-origin: $data;
+	-webkit-transform-origin: $data;
+}
+
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($time, $transition) {
+	animation-duration: $time;
+	animation-name: $transition;
+	-moz-animation-duration: $time;
+	-moz-animation-name: $transition;
+	-webkit-animation-duration: $time;
+	-webkit-animation-name: $transition;
+}

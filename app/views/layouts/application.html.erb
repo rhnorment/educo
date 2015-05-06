@@ -1,77 +1,30 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
+    <head>
+        <%= render 'layouts/head' %>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Push Wrapper -->
+            <div class="mp-pusher" id="mp-pusher">
 
-<head>
-  <%= render 'layouts/head' %>
-</head>
+                <!-- mp-menu -->
+                <%= render 'layouts/main_nav' %>
+                <!-- /mp-menu -->
 
-<body>
+                <div class="scroller"><!-- this is for emulating position fixed of the nav -->
+                    <div class="scroller-inner">
 
-    <div class="wrapper">
+                        <%= render 'layouts/header' %>
 
-        <!-- HEADER -->
-        <header class="header">
-            <%= render 'layouts/header' %>
-        </header>
+                        <%= yield %>
 
-        <!-- NAV -->
-        <nav class="main-nav" role="navigation">
-            <%= render 'layouts/main_nav' %>
-        </nav>
+                        <%= render 'layouts/footer' %>
 
-        <!-- CONTENT -->
-        <div class="content container">
+                    </div><!-- /scroller-inner -->
+                </div><!-- /scroller -->
 
-          <div class="page-wrapper">
-
-            <header class="page-heading clearfix">
-              <h1 class="heading-title pull-left"><%= @page_title %></h1>
-              <div class="breadcrumbs pull-right">
-                <ul class="breadcrumbs-list">
-                  <li class="breadcrumbs-label">You are here:</li>
-                  <li>
-                    <%= link_to 'Home', root_path %>
-                    <%= icon('angle-right') %>
-                  </li>
-                  <% if @section_crumb %>
-                      <li>
-                        <%= link_to @section_crumb.capitalize, "/#{@section_crumb}"  %>
-                        <%= icon('angle-right') %>
-                      </li>
-                  <% end %>
-                  <%= content_tag :li, @page_title %>
-                </ul>
-              </div>
-            </header>
-
-            <div class="page-content">
-              <div class="row page-row">
-
-                <article class="col-md-8 col-sm-7 <%= @page_class %>">
-                  <%= yield %>
-                </article>
-
-                <aside class="page-sidebar col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">
-                  <%= render "shared/#{@sidebar}_sidebar" if @sidebar %>
-                </aside>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-    </div>
-
-    <footer class="footer">
-      <%= render 'layouts/footer' %>
-    </footer>
-
-    <%= debug(params) if Rails.env.development? %>
-
-</body>
-
+            </div><!-- /pusher -->
+        </div><!-- /container -->
+    </body>
 </html>
-
