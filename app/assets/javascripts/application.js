@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require lightslider.min
+//= require formValidation.min

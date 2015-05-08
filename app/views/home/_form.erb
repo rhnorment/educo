@@ -1,0 +1,23 @@
+<%= form_for @contact do |f| %>
+
+    <div class="form-input">
+      <%= f.text_field :name, placeholder:'name' %>
+    </div>
+
+    <div class="form-input">
+      <%= f.email_field :email, placeholder:'email' %>
+    </div>
+
+    <div class="form-input">
+      <%= f.telephone_field :phone, placeholder:'phone' %>
+    </div>
+
+    <div class="form-input">
+      <%= f.text_area :message, placeholder:'leave a message' %>
+    </div>
+
+    <div class="form-input submit-button">
+      <%= f.submit 'Submit' %>
+    </div>
+
+<% end %>

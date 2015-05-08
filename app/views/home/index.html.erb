@@ -135,23 +135,7 @@
 </div>
 <div class="get-connected">
     <h4>LETS CONNECT</h4>
-    <form action="" method="post">
-        <div class="form-input">
-            <input type="text" name="connect-name" id="connect-name" placeholder="name">
-        </div>
-        <div class="form-input">
-            <input type="email" name="connect-email" id="connect-email" placeholder="email">
-        </div>
-        <div class="form-input">
-            <input type="tel" name="connect-phone" id="connect-phone" placeholder="phone">
-        </div>
-        <div class="form-input">
-            <textarea name="connect-message" id="connect-message" placeholder="leave a message"></textarea>
-        </div>
-        <div class="form-input submit-button">
-            <input type="submit" name="connect-submit" id="connect-submit" value="submit">
-        </div>
-    </form>
+    <%= render 'form' %>             <!-- render form partial -->
     <div class="contact-info">
         <span>6820 Auto Club Road</span>
         <span>Suite T</span>

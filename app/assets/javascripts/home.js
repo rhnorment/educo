@@ -56,6 +56,17 @@ jQuery.fn.exists = function(){return this.length>0;};
         characterousel.find(".arrow.right").click(function() {
             characterousel_slider.goToNextSlide();
         });
+
+
+        /**
+         * Inline contact form validation:
+         */
+
+
+
+
+
+
     });
 
 })(jQuery);

@@ -1,10 +1,10 @@
 class ContactMailer < ActionMailer::Base
 
-  default from: 'info@rivendellsanctuary.com'
+  default from: 'admissions@rivendellsanctuary.com'
 
   def contact_confirmation(contact)
     @contact = contact
-    mail to: contact.email, subject: 'Thank you for inquiring about SDC Rivendell Program'
+    mail to: contact.email, subject: 'Thank you for inquiring about SDC Rivendell 5-Pursuits Program'
   end
 
   def internal_confirmation(contact)
