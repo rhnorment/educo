@@ -1,0 +1,59 @@
+<div class="row">
+
+  <div class="col-sm-3 menu">
+
+    <h3>Overview</h3>   <!-- TODO:  add anchors on each linked page -->
+    <ul>
+      <%= content_tag :li, link_to('Leadership', about_path) %>
+      <%= content_tag :li, link_to('Faculty', '#') %>
+      <%= content_tag :li, link_to('Curriculum', '#') %>
+      <%= content_tag :li, link_to('Contact us', new_contact_path) %>
+    </ul>
+
+  </div>
+
+  <div class="col-sm-3 menu">
+
+    <h3>Menu</h3>
+    <ul>
+      <%= content_tag :li, link_to('About', about_path) %>
+      <%= content_tag :li, link_to('5-Pursuits', '#') %>
+      <%= content_tag :li, link_to('Student Life', '#') %>
+      <%= content_tag :li, link_to('Admissions', '#') %>
+    </ul>
+
+  </div>
+
+  <div class="col-sm-2 menu">
+
+    <h3>Social</h3>
+    <ul>
+      <%= content_tag :li, link_to('Twitter', @twitter_url) %>
+      <%= content_tag :li, link_to('Facebook', @facebook_url) %>
+      <%= content_tag :li, link_to('Pinterest', @pinterest_url) %>
+    </ul>
+
+  </div>
+
+  <div class="col-sm-4 newsletter">
+    <div class="signup clearfix">
+      <p>
+        Sign up for the newsletter and we'll inform you of updates, offers and more.
+      </p>
+      <form>
+        <input type="text" name="email" class="form-control" placeholder="Your email address" />
+        <input type="submit" value="Sign up" />
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<div class="row credits">
+
+  <div class="col-md-12">
+    Copyright &copy; Rivendell Education Company | Website by
+    <%= link_to 'Red Sherpa', 'http://www.sherpa.red', target:'_blank' %>
+  </div>
+
+</div>

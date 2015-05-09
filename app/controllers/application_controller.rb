@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   private
 
   def set_global_vars
-    @company_name = 'Rivendell Program'
+    @company_name = 'Rivendell 5-Pursuits Program'
     @phone_number = '(952) 996-1451'
     @fax_number = '(952) 996-1458'
     @inquiry_email = 'inquiries@rivendellsanctuary.com'

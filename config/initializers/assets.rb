@@ -1,3 +1,3 @@
-%w(home contacts devise active_admin).each do |controller|
+%w(web_pages contacts devise active_admin).each do |controller|
   Rails.application.config.assets.precompile += ["#{controller}.css", "#{controller}.js"]
 end

@@ -12,20 +12,33 @@
  *
  */
 
-// Helper stylesheets
+/* modules */
+@import 'modules/mixins';
+@import 'modules/elements';
+
+/* vendor */
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'bootstrap-overrides';
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-// JS library stylesheets
-@import "lightslider.min";
+/* config variables */
+@import 'partials/config';
+@import 'partials/variables';
 
-// Page assets
-@import "includes/variables";
-@import "includes/fonts";
-@import "includes/mixins";
-@import "includes/browser_reset";
-@import "includes/header";
-@import "includes/footer";
+/* layouts */
+@import 'partials/layout';
 
-// Page shared elements
-@import "shared/shared";
+/* pages */
+@import 'partials/pages/coming_soon';
+@import 'partials/pages/index';
+@import 'partials/pages/aboutus';
+@import 'partials/pages/features';
+@import 'partials/pages/services';
+@import 'partials/pages/portfolio';
+@import 'partials/pages/contactus';
+@import 'partials/pages/404';
+
+/* utilities */
+@import 'utilities';

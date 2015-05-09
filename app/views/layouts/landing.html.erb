@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+  <%= render 'layouts/head' %>
+</head>
+
+<body id="home">
+
+<header class="navbar navbar-inverse hero" role="banner">
+
+  <div class="container">
+    <%= render 'layouts/landing_header' %>
+  </div>
+
+</header>
+
+<%= yield %>
+
+<div id="footer-white">
+
+  <div class="container">
+    <%= render 'layouts/landing_footer' %>
+  </div>
+
+</div>
+
+</body>
+
+</html>

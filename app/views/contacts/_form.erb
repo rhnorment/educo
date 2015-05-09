@@ -1,0 +1,27 @@
+<%= form_for @contact, html: { id:'contact-form' } do |f| %>
+
+    <div class="form-group">
+      <%= f.label :name, 'Your name' %>
+      <%= f.text_field :name, class:'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :email, 'Email address' %>
+      <%= f.email_field :email, class:'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :phone %>
+      <%= f.text_field :phone, class:'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :message, 'Your message' %>
+      <%= f.text_area :message, rows:'5', class:'form-control' %>
+    </div>
+
+    <div class="submit">
+      <%= f.submit 'Email us', class:'button button-small' %>
+    </div>
+
+<% end %>

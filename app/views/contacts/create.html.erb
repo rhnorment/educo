@@ -1,2 +1,9 @@
-<h1>Contacts#create</h1>
-<p>Find me in app/views/contacts/create.html.erb</p>
+<div id="info">
+  <div class="container">
+    <%= content_tag :h3, @page_title %>
+
+    <%= content_tag :p, @message %>
+
+    <%= render 'form' if @contact.errors.any? %>
+  </div>
+</div>
