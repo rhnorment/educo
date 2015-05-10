@@ -1,4 +1,4 @@
-class WebPagesController < ApplicationController
+class SitePagesController < ApplicationController
 
   def home
     render layout: 'landing'

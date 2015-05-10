@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  root          'web_pages#home'
+  root          'site_pages#home'
 
-  get           '/about',           to: 'web_pages#about'
+  get           '/about',           to: 'site_pages#about'
 
   resources     :contacts,          only: [:new, :create]
 
