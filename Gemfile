@@ -14,6 +14,7 @@ gem 'jquery-turbolinks'
 
 #helper gems:
 gem 'bootstrap-sass'
+gem 'bootstrap-validator-rails'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'infusionsoft'

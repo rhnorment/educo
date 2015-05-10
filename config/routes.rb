@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get           '/about',           to: 'site_pages#about'
 
+  resources     :leads,             only: [:new, :create]
   resources     :contacts,          only: [:new, :create]
 
   get           '/404',             to: 'errors#not_found'

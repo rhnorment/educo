@@ -1,0 +1,39 @@
+<div class="container">
+
+  <div class="row header">
+    <div class="col-md-12">
+      <h3 class="logo">
+        <%= link_to 'Rivendell', root_path %>
+      </h3>
+      <h4>Request a free brochure from Rivendell today.</h4>
+      <p>
+        Your application fee will be waived if you apply within 30 days.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="wrapper clearfix">
+
+        <div class="formy">
+
+          <div class="row">
+            <div class="col-md-12">
+
+              <%= render 'form' %>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="already-account">
+    <%= link_to 'Return to the landing page', :back %>
+  </div>
+
+</div>

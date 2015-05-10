@@ -16,4 +16,5 @@
 //= require bootstrap-sprockets
 //= require holder
 //= require jquery.flexslider.min
+//= require bootstrapValidator.min
 //= require turbolinks
