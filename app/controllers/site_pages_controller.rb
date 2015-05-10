@@ -1,7 +1,7 @@
 class SitePagesController < ApplicationController
 
   def home
-    render layout: 'landing'
+    render layout: 'site'
   end
 
   def about

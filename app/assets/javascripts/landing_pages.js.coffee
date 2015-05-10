@@ -10,7 +10,7 @@ $ ->
     directionNav: false
     slideshowSpeed: 4000
 
-  # $('[data-toggle="tooltip"]').tooltip()
+# $('[data-toggle="tooltip"]').tooltip()
 
 # slideshow code
 slideshow = initialize: ->

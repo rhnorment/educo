@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-12">
+
+    <p class="contact">
+      6820 Auto Club Road; Suite T<br />
+      Bloomington, MN  55438<br />
+      <strong>Tel: 952-996-1451</strong><br />
+      <strong>Fax: 952-996-1458</strong><br />
+      <%= mail_to 'admissions@rivendellsanctuary.com', nil, class:'font-bold' %><br />
+      <%= link_to 'rivendell.sdcc.edu', 'http://rivendell.sdcc.edu', target: '_blank', class:'font-bold' %>
+    </p>
+
+    <ul class="social-icons">
+      <%= content_tag :li, link_to(icon('facebook', nil, class:'fa-2x'), @facebook_url, target:'_blank') %>
+      <%= content_tag :li, link_to(icon('twitter', nil, class:'fa-2x'), @twitter_url, target:'_blank') %>
+      <%= content_tag :li, link_to(icon('pinterest', nil, class:'fa-2x'), @pinterest_url, target:'_blank') %>
+      <%= content_tag :li, link_to(icon('youtube', nil, class:'fa-2x'), @youtube_url, target:'_blank') %>
+    </ul>
+
+  </div>
+</div>
+
+<div class="row credits">
+
+  <div class="col-md-12">
+    Copyright &copy; Rivendell Education Company | Website by
+    <%= link_to 'Red Sherpa', 'http://www.sherpa.red', target:'_blank' %>
+  </div>
+
+</div>

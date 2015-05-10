@@ -11,6 +11,12 @@ a {
 	color: #459CE7;
 }
 
+.navbar-center {
+  display: table;
+  margin: 0 auto;
+  float: none;
+}
+
 .pagination>.active {
 	>a,
 	>span, 
