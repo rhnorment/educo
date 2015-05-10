@@ -17,6 +17,48 @@ a {
   float: none;
 }
 
+#header-logo {
+	img {
+		height: 180px;
+
+		@media (min-width: 768px) {
+			margin-top: -10px;
+		}
+	}
+
+	@media (max-width: 769px) {
+		max-height: 50px;
+
+		img {
+			height: 150px;
+			margin-left: 15px;
+		}
+	}
+}
+
+#hero {
+	@media (min-width: 768px) {
+		height: 640px !important;
+		top: -180px !important;
+		padding-top: 230px !important;
+	}
+
+	@media (max-width: 769px) {
+		padding-top: 200px !important;
+	}
+}
+
+#home #hero .cta a {
+	@media (max-width: 769px) {
+		margin-left: 7px !important;
+		margin-right: 7px !important;
+	}
+}
+
+.navbar.hero .navbar-nav > li > a {
+	text-align: right;
+}
+
 .pagination>.active {
 	>a,
 	>span, 
