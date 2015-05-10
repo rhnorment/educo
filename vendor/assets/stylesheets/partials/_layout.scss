@@ -195,6 +195,37 @@ a, button {
 				}
 			}
 		}
+
+		#header-logo {
+			img {
+				height: 170px;
+				z-index: 10000;
+
+				@media (min-width: 768px) {
+					margin-top: -10px;
+				}
+			}
+
+			@media (max-width: 769px) {
+				max-height: 50px;
+
+				img {
+					height: 150px;
+					margin-left: 15px;
+				}
+			}
+		}
+
+		#home #hero .cta a {
+			@media (max-width: 769px) {
+				margin-left: 7px !important;
+				margin-right: 7px !important;
+			}
+		}
+
+		.navbar-nav > li > a {
+			text-align: right;
+		}
 	}
 
 	&.white {
