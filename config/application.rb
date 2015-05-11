@@ -17,5 +17,6 @@ module Servco2
 
     config.exceptions_app =  self.routes
 
+    config.nav_lynx.selected_class = 'active'
   end
 end

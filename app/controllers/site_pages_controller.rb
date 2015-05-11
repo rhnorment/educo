@@ -20,6 +20,7 @@ class SitePagesController < ApplicationController
   end
 
   def apply_now
+    @body_id = 'features'
   end
 
 end

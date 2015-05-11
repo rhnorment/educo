@@ -19,6 +19,7 @@ gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'infusionsoft'
 gem 'holder_rails'
+gem 'nav_lynx'
 
 # development gems:
 group :development do
