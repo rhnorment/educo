@@ -1,2 +1,131 @@
-<h1>WebPages#about</h1>
-<p>Find me in app/views/web_pages/about.html.erb</p>
+<div id="slider">
+  <div class="container">
+
+    <div class="row header">
+      <div class="col-md-12">
+        <h3>About us</h3>
+        <p>
+          Rivendell Education Company was founded in 2009 by father and son team, Bobby and Davis Norment.  We are located
+          in Bloomington, Minnesota with an affiliate location in the nation state of Singapore.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="flexslider">
+          <ul class="slides">
+            <%= content_tag :li, image_tag('office1.png') %>
+            <%= content_tag :li, image_tag('office2.png') %>
+            <%= content_tag :li, image_tag('office3.png') %>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="info">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <h1>Our vision & mission</h1>
+        <p>
+          To reestablish the Bible as man's personal and cultural authority by developing and licensing
+          Christian, higher education programs to local communities across the world.
+        </p>
+        <p>
+          To reestablish the Bible as man's personal and cultural authority by developing and licensing
+          Christian, higher education programs to local communities across the world.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <h1>Our objectives</h1>
+        <ol>
+          <li>
+            To bring higher education back under the intellectual and moral authority of the Bible.
+          </li><br />
+          <li>
+            To get the biblical worldview message into the hands of as many people as possible.
+          </li><br />
+          <li>
+            To be the world's leading biblical worldview education company and media resource company.
+          </li><br />
+          <li>
+            To feed churches with the best resources to use in Sunday School classes, cell groups, and
+            adult education gathering.
+          </li>
+        </ol>
+      </div>
+
+    </div>
+
+    <div class="row stats">
+
+      <div class="col-sm-3">
+        <strong>10</strong> faculty
+      </div>
+
+      <div class="col-sm-3">
+        <strong>5</strong> staff
+      </div>
+
+      <div class="col-sm-3">
+        <strong>9</strong> cohorts
+      </div>
+
+      <div class="col-sm-3">
+        <strong>160</strong> graduates
+      </div>
+
+    </div>
+
+    <div class="row team">
+
+      <div class="col-md-12 team-row">
+        <%= image_tag 'leadership/norment_bobby2-229x300.jpg',
+                      data: { toggle:'tooltip', placement:'top', title: 'Bobby Norment - Founder & CEO' } %>
+        <%= image_tag 'leadership/norment_davis2-229x300.jpg',
+                      data: { toggle:'tooltip', placement:'top', title: 'Davis Norment - Founder' } %>
+        <%= image_tag 'leadership/pete.png',
+                      data: { toggle:'tooltip', placement:'top', title: 'Pete Lackey - Founder & VP, Development' } %>
+        <%= image_tag 'leadership/garneau_micah2-229x300.jpg',
+                      data: { toggle:'tooltip', placement:'top', title: 'Micah Garneau - VP, Operations' } %>
+        <%= image_tag 'leadership/brunette_joe-229x300.jpg',
+                      data: { toggle:'tooltip', placement:'top', title: 'Joe Brunette - Product Manager' } %>
+        <%= image_tag 'leadership/koljonen_abby-229x300.jpg',
+                      data: { toggle:'tooltip', placement:'top', title: 'Abby Brunette - Product Manager' }%>
+      </div>
+
+      <div class="col-md-12 team-row">
+        <%= image_tag 'leadership/burreson_aaron2-229x300.jpg',
+                      data: { toggle:'tooltip', placement:'top', title: 'Aaron Burreson - Manager, Student Success Center' }%>
+        <%= image_tag 'leadership/yackel_amanda2-229x300.jpg',
+                      data: { toggle:'tooltip', placement:'top', title: 'Amanda Yackel - Staff, Student Success Center' }%>
+        <%= image_tag 'leadership/stromsodt_zach2-229x300.jpg',
+                      data: { toggle:'tooltip', placement:'top', title: 'Zach Stromsodt - Manager, Information Systems' }%>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="cta">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="wrapper clearfix">
+          <h4>Learn more about the Rivendell and San Diego Christian partnership:</h4>
+          <%= link_to 'Request brochure', new_lead_path, class:'button button-small' %>  <!-- TODO create jobs page. -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
