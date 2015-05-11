@@ -24,7 +24,7 @@
 
   </div>
 
-  <div class="col-sm-2 menu">
+  <div class="col-sm-3 menu">
 
     <h3>Social</h3>
     <ul>
@@ -35,23 +35,15 @@
 
   </div>
 
-  <div class="col-sm-4 newsletter">
-    <div class="signup clearfix">
-      <p>
-        Sign up for the newsletter and we'll inform you of updates, offers and more.
-      </p>
+  <div class="col-sm-3 menu">
 
-      <%= form_for @lead do |f| %>
+    <h3>Industry</h3>
+    <ul>
+      <%= content_tag :li, link_to('Education Today', '#') %>
+      <%= content_tag :li, link_to('Todays Education', '#') %>
+      <%= content_tag :li, link_to('Micah', '#') %>
+    </ul>
 
-      <%= f.email_field :email, class:'form-control', placeholder:'Your email address' %>
-
-      <% end %>
-
-      <form>
-        <input type="text" name="email" class="form-control" placeholder="Your email address" />
-        <input type="submit" value="Sign up" />
-      </form>
-    </div>
   </div>
 
 </div>
