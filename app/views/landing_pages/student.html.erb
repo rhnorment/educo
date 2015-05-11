@@ -1,261 +1,41 @@
 <div id="hero">
 
-  <div class="container">
-
-    <h1 class="hero-text animated fadeInDown">
-      Spend your first 16-months<br />
-      of college with us
-    </h1>
-
-    <p class="sub-text animated fadeInDown">
-      Experience the journey of your lifetime.
-    </p>
-
-    <div class="cta animated fadeInDown">   <!-- TODO add anchors on each linked page -->
-      <%= link_to 'Request a brochure', new_lead_path, class:'button-outline' %>
-    </div>
-
-  </div>
+  <%= render 'shared/hero' %>
 
 </div>
 
 <div id="features">
 
-  <div class="container">
-
-    <div class="row header">
-      <div class="col-md-12">
-        <h2>An Exceptional College Core Program</h2>
-        <p>
-          We bring relevancy and significance to the core college curriculum.
-        </p>
-      </div>
-    </div>
-
-    <div class="row feature">
-      <div class="col-md-6 info">
-        <h4>Study one subject at a time...</h4>
-        <p>
-          I need 40 words on ONE SUBJECT AT A TIME.
-        </p>
-      </div>
-      <div class="col-md-6 image" %>
-        <%= holder_tag '402x242', 'one subject a time cutout 402x242', {}, class:'img-responsive' %>
-      </div>
-    </div>
-
-    <%= content_tag :div, nil, class:'divider' %>
-
-    <div class="row feature backwards">
-      <div class="col-md-6 info">
-        <h4>...in the flow of the biblical narrative</h4>
-        <p>
-          I need 40 words on THE FLOW OF THE BIBLICAL NARRATIVE
-        </p>
-      </div>
-      <div class="col-md-6 image" %>
-        <%= holder_tag '371x246', 'flow of biblical narrative 371x246', {}, class:'img-responsive' %>
-      </div>
-    </div>
-
-  </div>
+  <%= render 'shared/features' %>
 
 </div>
 
 <div id="pricing">
 
-  <div class="container">
-    <div class="row header">
-      <div class="col-md-12">
-        <h3>Three great reasons to start college with Rivendell:</h3>
-      </div>
-    </div>
-    <div class="row charts">
-
-      <div class="col-md-4">
-        <div class="chart first">
-          <%= content_tag :div, @solution_1_name, class:'plan-name' %>
-          <div class="specs">
-            <div class="spec">
-              <%= content_tag :span, 'AA', class:'variable' %>
-              degree
-            </div>
-            <div class="spec">
-              <%= content_tag :span, 'Foundations', class:'variable' %>
-              for life
-            </div>
-          </div>
-          <%= link_to content_tag(:span, 'Learn more'), '#', class:'btn-signup button-clear' %>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="chart featured">
-          <%= content_tag :div, 'Most popular', class:'popular' %>
-          <%= content_tag :div, @solution_2_name, class:'plan-name' %>
-          <div class="specs">
-            <div class="spec">
-              <%= content_tag :span, 'AA', class:'variable' %>
-              degree
-            </div>
-            <div class="spec">
-              <%= content_tag :span, '16', class:'variable' %>
-              months to complete
-            </div>
-            <div class="spec">
-              <%= content_tag :span, 'Foundations', class:'variable' %>
-              for life
-            </div>
-            <div class="spec">
-              <%= content_tag :span, 'Study abroad', class:'variable' %>
-              included
-            </div>
-          </div>
-          <%= link_to content_tag(:span, 'Learn more'), '#', class:'btn-signup button-clear' %>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="chart last">
-          <%= content_tag :div, @solution_3_name, class:'plan-name' %>
-          <div class="specs">
-            <div class="spec">
-              <%= content_tag :span, 'BA', class:'variable' %>
-              degree
-            </div>
-            <div class="spec">
-              <%= content_tag :span, '24', class:'variable' %>
-              months to complete
-            </div>
-            <div class="spec">
-              <%= content_tag :span, 'Foundations', class:'variable' %>
-              for life
-            </div>
-            <div class="spec">
-              <%= content_tag :span, 'Study abroad', class:'variable' %>
-              included
-            </div>
-          </div>
-          <%= link_to content_tag(:span, 'Learn more'), '#', class:'btn-signup button-clear' %>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
+  <%= render 'shared/reasons' %>
 
 </div>
 
 <div id="slider">
-  <div class="container">
 
-    <div class="row header">
-      <div class="col-md-12">
-        <h3>Spend five months in Italy studying Fine Arts</h3>
-      </div>
-    </div>
+  <%= render 'shared/travel' %>
 
-    <div class="row">
-      <div class="col-md-12 slide-wrapper">
-
-        <div class="slideshow">
-          <%= content_tag :div, nil, class:'btn-nav prev' %>
-          <%= content_tag :div, nil, class:'btn-nav next' %>
-          <div class="slide active">
-            <%= holder_tag '664x332', 'italy cutout 1(664x332)' %>
-          </div>
-          <div class="slide">
-            <%= holder_tag '664x332', 'italy cutout 2(664x332)' %>
-          </div>
-          <div class="slide">
-            <%= holder_tag '664x332', 'italy cutout 3(664x332)' %>
-          </div>
-          <div class="slide">
-            <%= holder_tag '664x332', 'italy cutout 4(664x332)' %>
-          </div>
-          <div class="slide">
-            <%= holder_tag '664x332', 'italy cutout 5(664x332)' %>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
 </div>
 
 <div id="testimonials">
-  <div class="container">
 
-    <div class="row header">
-      <div class="col-md-12">
-        <h3>Recommended by Christian leaders:</h3>
-      </div>
-    </div>
+  <%= render 'shared/testimonials' %>
 
-    <div class="row">
-
-      <div class="col-sm-6">
-        <div class="testimonial pull-right">
-          <div class="quote">
-            "Based upon the curriculum, vision, and integrity of the program as well as the excellence of those serving in it,
-            I wholeheartedly encourage any Christian student wanting to prepare for an impactful life to
-            strongly consider the Rivendell Program as the first two years of their college training.”
-            <div class="arrow-down">
-              <%= content_tag :div, nil, class:'arrow' %>
-              <%= content_tag :div, nil, class:'arrow-border' %>
-            </div>
-          </div>
-          <div class="author">
-            <%= image_tag 'RandySims_bw1.jpg', class:'pic' %>
-            <%= content_tag :div, 'Randy Sims', class:'name' %>
-            <%= content_tag :div, 'Worldview Academy', class:'company' %>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <div class="testimonial">
-          <div class="quote">
-            Education at its best is learning to learn. The Rivendell Program has been established around this
-            approach to education, and I heartily endorse their program of study. At Rivendell, the old cliché of “teaching kids
-            how to think, not what to think” is not a cliché – it actually happens."
-            <div class="arrow-down">
-              <%= content_tag :div, nil, class:'arrow' %>
-              <%= content_tag :div, nil, class:'arrow-border' %>
-            </div>
-          </div>
-          <div class="author">
-            <%= image_tag 'stonestreet.jpg', class:'pic' %>
-            <%= content_tag :div, 'John Stonestreet', class:'name' %>
-            <%= content_tag :div, 'Summit Ministries', class:'company' %>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
 </div>
 
 <div id="cta">
-  <p>Take the first step on your 16-month journey of a lifetime!</p>
-  <%= link_to 'Request a brochure', new_lead_path %>
+
+  <%= render 'shared/cta' %>
+
 </div>
 
 <div id="clients">
-  <div class="container">
 
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Our education partners</h3>
-        <p>We are a regionally accredited program of San Diego Christian and the Western Association of Schools and Colleges.</p>
-        <div class="logos">
-          <%= image_tag 'SDCC-logo.png' %>
-          <%= image_tag 'WASC-logo.png' %>
-        </div>
-      </div>
-    </div>
+  <%= render 'shared/partners' %>
 
-  </div>
 </div>

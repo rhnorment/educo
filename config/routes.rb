@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get           '/about',           to: 'site_pages#about'
 
   get           '/student',         to: 'landing_pages#student'
+  get           '/parent',          to: 'landing_pages#parent'
 
   resources     :leads,             only: [:new, :create]
   resources     :contacts,          only: [:new, :create]

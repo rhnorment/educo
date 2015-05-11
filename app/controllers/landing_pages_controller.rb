@@ -9,5 +9,8 @@ class LandingPagesController < ApplicationController
   end
 
   def parent
+    session[:tag_id] = 271
+
+    @lead = Lead.new
   end
 end
