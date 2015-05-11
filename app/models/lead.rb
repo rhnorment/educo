@@ -29,14 +29,14 @@ class Lead < ActiveRecord::Base
 
   # methods:
   def add_lead_to_infusionsoft
-    Infusionsoft.contact_add_with_dup_check( {  FirstName: self.first_name,
+    contact_id = Infusionsoft.contact_add_with_dup_check( {  FirstName: self.first_name,
                                                 LastName: self.last_name,
                                                 Email: self.email,
                                                 Phone1: self.phone,
                                                 },
                                             'EmailAndName'
     )
-    #Infusionsoft.contact_add_to_group(contact_id, tag_id)
+    Infusionsoft.contact_add_to_group(contact_id, self.tag_id)
   end
 
 end
