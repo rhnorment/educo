@@ -1,6 +1,8 @@
 class SitePagesController < ApplicationController
 
   def home
+    @lead = Lead.new
+
     render layout: 'site'
   end
 

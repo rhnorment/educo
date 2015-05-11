@@ -20,7 +20,7 @@
 
 class Lead < ActiveRecord::Base
 
-# model validations
+  # model validations
   validates       :first_name, :last_name, :email, presence: true
   validates       :email, format: { with: /\A\S+@\S+\z/ }
 

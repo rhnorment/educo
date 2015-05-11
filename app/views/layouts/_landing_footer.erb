@@ -40,6 +40,13 @@
       <p>
         Sign up for the newsletter and we'll inform you of updates, offers and more.
       </p>
+
+      <%= form_for @lead do |f| %>
+
+      <%= f.email_field :email, class:'form-control', placeholder:'Your email address' %>
+
+      <% end %>
+
       <form>
         <input type="text" name="email" class="form-control" placeholder="Your email address" />
         <input type="submit" value="Sign up" />
