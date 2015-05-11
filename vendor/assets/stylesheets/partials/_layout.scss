@@ -228,6 +228,26 @@ a, button {
 		}
 	}
 
+	&.no-hero {
+		#header-logo {
+			max-height: 50px;
+
+			img {
+				height: 170px;
+				z-index: 10000;
+
+				@media (max-width: 769px) {
+					height: 150px;
+					margin-left: 15px;
+				}
+			}
+		}
+
+		.navbar-nav > li > a {
+			text-align: right;
+		}
+	}
+
 	&.white {
 		min-height: 70px;
 		margin-bottom: 0;
