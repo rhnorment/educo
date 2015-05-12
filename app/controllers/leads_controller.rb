@@ -4,6 +4,8 @@ class LeadsController < ApplicationController
 
   def new
     @lead = Lead.new
+
+    session[:tag_id] = 271
   end
 
   def create
