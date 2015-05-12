@@ -1,4 +1,4 @@
-<div class="col-md-12 info">
+<div class="col-md-6 info">
 
   <h4>All-inclusive college experience</h4>
   <p>
@@ -9,9 +9,18 @@
     exceptional students to become extraordinary citizens.
   </p>
   <p>
-    Please see our <%= link_to 'financial aid tab', '#fin-aid' %> to learn more about the different
+    Please see our <%= link_to 'financial aid tab', '#fin-aid', data: { toggle:'tab' } %> to learn more about the different
     ways you can fund your Rivendell experience through scholarships, grants, and loans.
   </p>
+
+</div>
+
+<div class="col-md-6 image">
+  <%= holder_tag '643x246', 'tuition image (643x246)', {}, class:'img-responsive' %>
+</div>
+
+<div class="col-md-12 info">
+
   <h5>Learning Experience (All-inclusive tuition):</h5>
   <ul>
     <li>Tuition</li>
@@ -29,6 +38,7 @@
   <p class="font-bold">
     The cost per semester for the All-Inclusive Tuition is $11,975.
   </p>
+
   <h5>Living Experience (All-Inclusive Room & Board):</h5>
   <ul>
     <li>Room: Traditional residence halls for men, apartment-style residence halls for women while in Minnesota</li>
