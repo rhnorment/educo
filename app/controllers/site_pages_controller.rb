@@ -17,6 +17,7 @@ class SitePagesController < ApplicationController
   end
 
   def admissions
+    @body_id = 'features'
   end
 
   def apply_now

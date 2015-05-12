@@ -1,0 +1,48 @@
+<div id="tabs">
+  <div class="container">
+
+    <div class="row header">
+      <div class="col-md-12">
+        <h3>Welcome to our Admissions Department</h3>
+        <p>
+          We're glad you have decided to learn more about Rivendell 5 Pursuits Program!  We are honored to serve
+          your needs.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 tabs-wrapper">
+
+        <ul class="nav nav-tabs">
+          <%= content_tag :li, link_to('Tuition & Fees', '#tuition', data: { toggle:'tab' }), class:'active' %>
+          <%= content_tag :li, link_to('Financial Aid', '#fin-aid', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Credit Transfers', '#credits', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Deadlines', '#deadlines', data: { toggle:'tab' }) %>
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane fade in active" id="tuition">
+            <%= render 'tuition_pane' %>
+          </div>
+
+          <div class="tab-pane fade" id="fin-aid">
+            <%= render 'finaid_pane' %>
+          </div>
+
+          <div class="tab-pane fade" id="credits">
+            <%= render 'credits_pane' %>
+          </div>
+
+          <div class="tab-pane fade" id="deadlines">
+            <%= render 'deadlines_pane' %>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
