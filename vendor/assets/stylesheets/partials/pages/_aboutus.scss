@@ -50,7 +50,7 @@
 		}
 	}
 
-	#info {
+	#info, #accreditation {
 		-webkit-font-smoothing: antialiased;
 		h1 {
 			font-size: 24px;
@@ -142,7 +142,7 @@
 	}
 
 	#cta {
-		margin-top: 100px;
+		margin: 50px 0px;
 
 		@media(max-width: 991px) {
 			margin-top: 60px;
