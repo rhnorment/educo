@@ -8,10 +8,12 @@ class SitePagesController < ApplicationController
 
   def about
     @body_id = 'about-us'
+    @page_title = 'About'
   end
 
   def academics
     @body_id = 'features'
+    @page_title = 'Academics'
   end
 
   def student_life
@@ -20,10 +22,12 @@ class SitePagesController < ApplicationController
 
   def admissions
     @body_id = 'features'
+    @page_title = 'Admissions'
   end
 
   def apply_now
     @body_id = 'features'
+    @page_title = 'Apply Now'
   end
 
 end
