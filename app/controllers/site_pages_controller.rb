@@ -1,5 +1,7 @@
 class SitePagesController < ApplicationController
 
+  before_action   :walled_garden
+
   def home
     render layout: 'site'
   end

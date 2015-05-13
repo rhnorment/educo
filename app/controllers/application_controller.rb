@@ -6,6 +6,10 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def walled_garden
+    redirect_to college_core_url
+  end
+
   def set_global_vars
     @company_name = 'Rivendell'
     @phone_number = '(952) 996-1451'
