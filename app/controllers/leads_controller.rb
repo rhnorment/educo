@@ -25,4 +25,3 @@ class LeadsController < ApplicationController
     end
 
 end
-herok
