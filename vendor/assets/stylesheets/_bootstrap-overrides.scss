@@ -17,12 +17,9 @@ a {
   float: none;
 }
 
-.tab-content > .tab-pane {
-	display: none;
-}
-
+.tab-content > .tab-pane,
 .tab-content > .active {
-	display: block;
+	visibility: visible;
 }
 
 .pagination>.active {
