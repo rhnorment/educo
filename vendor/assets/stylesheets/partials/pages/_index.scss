@@ -215,8 +215,9 @@
 				text-align: center;
 				width: 97%;
 
-				min-height: 480px;
-				//top: 37px;
+				min-height: 315px;
+				position: relative;
+				top: 37px;
 
 				@media (max-width: 991px) {
 					float: none !important;
@@ -257,10 +258,12 @@
 						color: #B1B1B1;
 						font-weight: 400;
 					}
+					.quantity {
+						margin-top: 15px;
+					}
 				}				
 
 				.quantity {
-					margin-top: 15px;
 					text-align: center;
 					.dollar {
 						font-size: 19px;
