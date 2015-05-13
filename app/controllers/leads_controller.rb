@@ -11,7 +11,7 @@ class LeadsController < ApplicationController
   def create
     lead = Lead.new(lead_params)
 
-    lead.tag_id = session[:tag_id]
+    lead.tag_id = 271
 
     if lead.save
       @message = 'Please download your brochure'
