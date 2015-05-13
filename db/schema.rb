@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(version: 20150510153651) do
     t.string   "state"
     t.string   "zip_code"
     t.string   "graduation_year"
-    t.integer  "tag_id"
+    t.integer  "trigger_tag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

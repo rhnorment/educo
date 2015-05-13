@@ -11,7 +11,7 @@ class CreateLeads < ActiveRecord::Migration
       t.string :state
       t.string :zip_code
       t.string :graduation_year
-      t.integer :tag_id
+      t.integer :trigger_tag_id
       t.timestamps
     end
   end

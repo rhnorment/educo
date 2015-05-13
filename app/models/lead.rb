@@ -13,7 +13,7 @@
 #  state           :string(255)
 #  zip_code        :string(255)
 #  graduation_year :string(255)
-#  tag_id          :integer
+#  trigger_tag_id  :integer
 #  created_at      :datetime
 #  updated_at      :datetime
 #
@@ -29,14 +29,14 @@ class Lead < ActiveRecord::Base
 
   # methods:
   def add_lead_to_infusionsoft
-    Infusionsoft.contact_add_with_dup_check( {  FirstName: self.first_name,
+    contact_id = Infusionsoft.contact_add_with_dup_check( {  FirstName: self.first_name,
                                                 LastName: self.last_name,
                                                 Email: self.email,
                                                 Phone1: self.phone,
                                                 },
                                             'EmailAndName'
     )
-    # Infusionsoft.contact_add_to_group(contact_id, 271)
+    Infusionsoft.contact_add_to_group(contact_id, self.trigger_tag_id)
   end
 
 end
