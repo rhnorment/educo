@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get           '/admissions',              to: 'site_pages#admissions'
   get           '/admissions/apply_now',    to: 'site_pages#apply_now'
 
-  get           '/student',                 to: 'landing_pages#student'
+  get           '/college-core',            to: 'landing_pages#student'
   get           '/parent',                  to: 'landing_pages#parent'
 
   resources     :leads,                     only: [:new, :create]
