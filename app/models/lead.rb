@@ -25,7 +25,7 @@ class Lead < ActiveRecord::Base
   def add_lead_to_infusionsoft
     contact_id = Infusionsoft.contact_add_with_dup_check( {  FirstName: self.first_name,
                                                 LastName: self.last_name,
-                                                Email: self.email },
+                                                Email: self.email, Phone1: self.phone },
                                                 'EmailAndName'
     )
     Infusionsoft.contact_add_to_group(contact_id, self.trigger_tag_id)
