@@ -7,5 +7,5 @@ class LandingPagesController < ApplicationController
 
   def parent
   end
-  
+
 end
