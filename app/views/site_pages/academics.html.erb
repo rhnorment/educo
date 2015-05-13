@@ -1,0 +1,78 @@
+<div id="tabs">
+  <div class="container">
+
+    <div class="row header">
+      <h3>Journey Through the College Core</h3>
+      <p><strong>8 ways</strong> we deliver the college core:</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 tabs-wrapper">
+
+        <ul class="nav nav-tabs">
+          <%= content_tag :li, link_to('Christianly', '#christianly', data: { toggle:'tab' }), class:'active' %>
+          <%= content_tag :li, link_to('Sequentially', '#sequentially', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Communally', '#communally', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Globally', '#globally', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Critically', '#critically', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Classically', '#classically', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Socratically', '#socratically', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Holistically', '#holistically', data: { toggle:'tab' }) %>
+        </ul>
+
+        <div class="tab-content">
+
+          <div id="christianly" class="tab-pane fade in active">     <!-- CHRISTIANLY -->
+            <div class="col-md-6 info">
+              <h4>Learn the college core <strong><i>Christianly</i></strong></h4>
+              <p>Study all subjects from a biblical worldview perspective.</p>
+              <ul>
+                <li>Hear God's voice in every discipline</li>
+                <li>Connect life with all of scripture</li>
+                <li>Buttress a defense of your faith</li>
+              </ul>
+            </div>
+            <div class="col-md-6 image">
+              <%= holder_tag '359x222', 'christianly image (359x322)', {}, class:'img-responsive' %>
+            </div>
+          </div>
+
+          <div id="sequentially" class="tab-pane fade">     <!-- SEQUENTIALLY -->
+            <div class="col-md-6 image">
+              <%= holder_tag '359x222', 'sequentially image (359x322)', {}, class:'img-responsive' %>
+            </div>
+            <div class="col-md-6 info">
+              <h4>Progress through the college core <strong><i>sequentially</i></strong></h4>
+              <p>Study the liberal arts one subject at a time in the flow of the biblical narrative.</p>
+              <ul>
+                <li>Generate a love for learning</li>
+                <li>Intake the unity of knowledge</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="communally" class="tab-pane fade">     <!-- COMMUNALLY -->
+            <div class="col-md-6 info">
+              <h4>Experience the college core <strong><i>communally</i></strong></h4>
+              <p>
+                Belong to a cohort of 20-30 colleagues, 2 faculty, and a mentor, and remain together
+                for the entire program.
+              </p>
+              <ul>
+                <li>Experience unparalleled support</li>
+                <li>Broaden your capacity to love unconditionally</li>
+                <li>Foster deep and meaningful relationships with peers and faculty</li>
+              </ul>
+            </div>
+            <div class="col-md-6 image">
+              <%= holder_tag '359x222', 'communally image (359x322)', {}, class:'img-responsive' %>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

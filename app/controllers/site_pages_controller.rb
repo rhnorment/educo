@@ -1,6 +1,6 @@
 class SitePagesController < ApplicationController
 
-  before_action   :walled_garden
+  before_action   :walled_garden,   except: [:academics, :admissions]
 
   def home
     render layout: 'site'
