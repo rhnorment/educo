@@ -36,7 +36,7 @@ class Lead < ActiveRecord::Base
                                                 },
                                             'EmailAndName'
     )
-    Infusionsoft.contact_add_to_group(contact_id, self.tag_id)
+    Infusionsoft.contact_add_to_group(contact_id, 271)
   end
 
 end
