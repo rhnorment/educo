@@ -227,7 +227,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
-  bootstrap-sass
+  bootstrap-sass (= 3.3.3)
   bootstrap-validator-rails
   capybara
   coffee-rails (~> 4.0.0)

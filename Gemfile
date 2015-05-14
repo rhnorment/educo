@@ -13,7 +13,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'jquery-turbolinks'
 
 #helper gems:
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '3.3.3'
 gem 'bootstrap-validator-rails'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
