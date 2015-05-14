@@ -1,6 +1,6 @@
 class SitePagesController < ApplicationController
 
-  before_action   :walled_garden,   except: :academics
+  #before_action   :walled_garden,   except: :academics
 
   def home
     render layout: 'site'
@@ -14,6 +14,46 @@ class SitePagesController < ApplicationController
   def academics
     @body_id = 'features'
     @page_title = 'Academics'
+  end
+
+  def christianly
+    @body_id = 'blogpost'
+    @page_title = 'Learn the college core Christianly'
+  end
+
+  def sequentially
+    @body_id = 'blogpost'
+    @page_title = 'Progress through the college core sequentially'
+  end
+
+  def communally
+    @body_id = 'blogpost'
+    @page_title = 'Experience the college core communally'
+  end
+
+  def globally
+    @body_id = 'blogpost'
+    @page_title = 'Journey through the college core globally'
+  end
+
+  def critically
+    @body_id = 'blogpost'
+    @page_title = 'Think through the college core critically'
+  end
+
+  def classically
+    @body_id = 'blogpost'
+    @page_title = 'Approach the college core critically'
+  end
+
+  def socratically
+    @body_id = 'blogpost'
+    @page_title = 'Discuss the college core socratically'
+  end
+
+  def holistically
+    @body_id = 'blogpost'
+    @page_title = 'Practice the college core holistically'
   end
 
   def student_life
