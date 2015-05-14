@@ -21,16 +21,14 @@
 		// border-bottom: 1px solid #E4E4E4;
 
 		.slideshow {
-			background: image_url('slider-bg.jpg');
-			margin: 0 auto;
-			margin-top: 35px;
+			background: image_url('slider-bg.jpg') center;
+			margin: 35px auto 0;
 			width: 844px;
 			height: 418px;
 			position: relative;
 			overflow: hidden;
 
 			@media(max-width: 991px) {
-				background: none;
 				width: inherit;
 				height: 340px;
 			}
