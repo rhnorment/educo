@@ -21,6 +21,7 @@ class ApplicationController < ActionController::Base
     @facebook_url = 'https://www.facebook.com/rivendellsanctuary'
     @pinterest_url = 'https://www.pinterest.com/rivendellsanct/'
     @google_plus_url = 'https://plus.google.com/108374067538365440572/posts'
+    @youtube_url = 'https://www.youtube.com/user/RivendellSanctuary'
   end
 
 end
