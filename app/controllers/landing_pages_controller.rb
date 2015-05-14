@@ -6,7 +6,8 @@ class LandingPagesController < ApplicationController
     @page_title = 'An Exceptional College Core Program'
   end
 
-  def parent
+  def eight_ways
+    @page_title = '8 Ways Rivendell Delivers the College Core'
   end
 
 end

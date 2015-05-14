@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get           '/admissions/apply_now',    to: 'site_pages#apply_now'
 
   get           '/college-core',            to: 'landing_pages#student'
-  get           '/parent',                  to: 'landing_pages#parent'
+  get           '/eight-ways',              to: 'landing_pages#eight_ways'
 
   resources     :leads,                     only: [:new, :create]
   resources     :contacts,                  only: [:new, :create]
