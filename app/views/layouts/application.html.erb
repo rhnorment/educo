@@ -10,23 +10,25 @@
 
 <body id="<%= @body_id %>">
 
-<header class="navbar navbar-inverse normal no-hero" role="banner">
+    <header class="navbar navbar-inverse normal no-hero" role="banner">
 
-  <div class="container">
-    <%= render 'layouts/header' %>
-  </div>
+        <div class="container">
+            <%= render 'layouts/header' %>
+        </div>
 
-</header>
+    </header>
 
-<%= yield %>
+    <%= yield %>
 
-<div id="footer">
+    <div id="footer">
 
-  <div class="container">
-    <%= render 'layouts/footer' %>
-  </div>
+        <div class="container">
+            <%= render 'layouts/footer' %>
+        </div>
 
-</div>
+    </div>
+
+    <%= debug(params) if Rails.env.development? %>
 
 </body>
 
