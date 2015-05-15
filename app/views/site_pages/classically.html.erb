@@ -1,0 +1,35 @@
+<div id="blogpost-wrapper">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <%= content_tag :div, image_tag('blogpost5.png', class:'img-responsive'), class:'main-pic' %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 post">
+
+        <div class="title">
+          Approach the college core <strong><em>classically</em></strong>
+        </div>
+        <div class="author">
+          There is a little space here for another sentence.
+        </div>
+
+        <div class="content">
+          <p>
+            A whole lot of content goes here.
+          </p>
+        </div>
+
+        <div class="other-posts">
+          <%= link_to '← Think through the college core critically', academics_critically_path, class:'prev' %>
+          <%= link_to 'Discuss the college core socratically →', academics_socratically_path, class:'next pull-right' %>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
