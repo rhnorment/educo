@@ -5,19 +5,19 @@ Rails.application.routes.draw do
   get           '/about',                   to: 'site_pages#about'
 
   get           '/academics',               to: 'site_pages#academics'
-  get           '/academics/christianly',   to: 'site_pages#/academics/christianly'
-  get           '/academics/sequentially',  to: 'site_pages#/academics/sequentially'
-  get           '/academics/communally',    to: 'site_pages#/academics/communally'
-  get           '/academics/globally',      to: 'site_pages#/academics/globally'
-  get           '/academics/critically',    to: 'site_pages#/academics/critically'
-  get           '/academics/classically',   to: 'site_pages#/academics/classically'
-  get           '/academics/socratically',  to: 'site_pages#/academics/socratically'
-  get           '/academics/hoistically',   to: 'site_pages#/academics/holistically'
+  get           '/academics/christianly',   to: 'site_pages#christianly'
+  get           '/academics/sequentially',  to: 'site_pages#sequentially'
+  get           '/academics/communally',    to: 'site_pages#communally'
+  get           '/academics/globally',      to: 'site_pages#globally'
+  get           '/academics/critically',    to: 'site_pages#critically'
+  get           '/academics/classically',   to: 'site_pages#classically'
+  get           '/academics/socratically',  to: 'site_pages#socratically'
+  get           '/academics/hoistically',   to: 'site_pages#holistically'
 
   get           '/student_life',            to: 'site_pages#student_life'
 
   get           '/admissions',              to: 'site_pages#admissions'
-  get           '/admissions/apply_now',    to: 'site_pages#/admissions/apply_now'
+  get           '/admissions/apply_now',    to: 'site_pages#apply_now'
 
   get           '/college-core',            to: 'landing_pages#student'
   get           '/eight-ways',              to: 'landing_pages#eight_ways'
