@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   get           '/college-core',            to: 'landing_pages#student'
   get           '/eight-ways',              to: 'landing_pages#eight_ways'
 
-  resources     :leads,                     only: [:new, :create]
+  resources     :leads,                     path: '/students', only: [:new, :create]
   resources     :contacts,                  only: [:new, :create]
 
   get           '/404',                     to: 'errors#not_found'
