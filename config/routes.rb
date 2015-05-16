@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get           '/academics/critically',    to: 'site_pages#critically'
   get           '/academics/classically',   to: 'site_pages#classically'
   get           '/academics/socratically',  to: 'site_pages#socratically'
-  get           '/academics/hoistically',   to: 'site_pages#holistically'
+  get           '/academics/holistically',  to: 'site_pages#holistically'
 
   get           '/student_life',            to: 'site_pages#student_life'
 
