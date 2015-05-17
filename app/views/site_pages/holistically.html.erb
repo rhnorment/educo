@@ -19,8 +19,110 @@
 
         <div class="content">
           <p>
-            A whole lot of content goes here.
+            Education must always hold in the forefront two fundamental questions.
+
+            <ul>
+
+              <li>What is the purpose of education?</li>
+              <li>What is an educated person</li>
+
+            </ul>
+
           </p>
+
+          <p>
+            When Western Civilization embraced the existence of a moral God,  education was defined more
+            broadly.  It was more than cognitive knowledge.  It was more than the accumulation of information,
+            data, and facts.  Historically, education was holistic. It was about growing intellectually,
+            morally, socially, and spiritually as a person.  Classical education took into account a person’s
+            soul.  It directed people towards the pinnacle of epistemological pyramid – Godly wisdom –
+            the moral application of knowledge.  It pointed the way to holiness and godliness.  In other
+            words, an educated person was more than a specialist.
+          </p>
+
+          <p>
+            Turning away from God meant education’s two fundamental questions (What is the purpose of
+            education? What is an educated person?) had to be reevaluated.  One can argue that the death
+            of God significantly narrowed the answers to these questions.  Therefore, students graduated
+            into society grossly malnourished.
+          </p>
+
+          <p>
+            The absence of God meant the educational institution would be compelled to find a new god to
+            unify all its parts.  It made a valiant effort to unify around the god of science and progress.
+            However, this god failed to fulfill its promises and the postmodern world lost faith in this
+            deity.  Why? Because Theology was preordained to be the queen of all thought. Science was to be
+            her servant.
+          </p>
+
+          <p>
+            Education, ever since, has struggled to find something grand and inspiring to rally behind.
+            Its failure to do so led the institution to abandon its search and concentrate on finding
+            meaning simply in its parts.  So, as for the first question, “What is the purpose of education?”
+            Neil Postman writes,
+          </p>
+
+          <blockquote>
+            <p>
+              The answers are discouraging, and one of them can be inferred from any television commercial
+              urging the young to stay in school.  The commercial will either imply or state explicitly that
+              education will help the persevering student to get a good job.  And that’s it…To say the least,
+              this is neither grand nor inspiring.  The story suggests that the United States is not a
+              culture, but merely an economy, which is the last refuge of an exhausted philosophy of education.
+            </p>
+          </blockquote>
+
+          <p>
+            The “powers that be” may disagree with the above statement, and this purpose would likely not
+            be stated in a university business plan. However, approach any high school graduate today and
+            ask them why they seek higher education; the majority of responses would be as Neil Postman
+            stated: “To get a good job.”
+          </p>
+
+          <p>
+            With vocation now the centerpiece, the answer to the second question, “What is an educated
+            person?” is tragically reduced to one who possesses “skills.”  Born is the specialist, one who
+            is schooled in a particular career, but not in how his/her profession fit into the greater
+            whole.  Born is the expert who excels technically, but withers intellectually, morally,
+            socially and spiritually.  We live in a day when an individual can be labeled educated simply
+            by acquiring a Ph.D. in computer engineering.  In other words, a person can be brilliant with
+            all the ins and outs of a computer, but ignorant when it comes to life and yet still be labeled
+            “educated” because of the three letters (Ph.D.) that accompany his/her name.  This definition
+            of education is terribly bankrupt.  It is a soulless form of education.  The letters “Ph.D.”
+            say nothing about a person’s knowledge of the world. It is indifferent to ones character or
+            morality (i.e. work ethic, people skills, dependability, honesty, etc.). It is silent when
+            it comes to wisdom.
+          </p>
+
+          <p>
+            Rather than developing one aspect of the person, namely, the intellect, Rivendell believes the
+            best education is one that develops every aspect of a person. As such, our program includes: a
+            rigorous academic pursuit, spiritual formation, holy and healthy living, community service and
+            life skills, detailed in the tabs below.
+          </p>
+
+          <div role="tabpanel">
+
+            <ul class="nav nav-tabs">
+
+              <%= content_tag :li, link_to('Life Skills', '#life-skills', data: { toggle:'tab' }), class:'active' %>
+              <%= content_tag :li, link_to('Community Service', '#community-service', data: { toggle:'tab' }) %>
+              <%= content_tag :li, link_to('Holy & Healthy Living', '#holy-healthy-living', data: { toggle:'tab' }) %>
+              <%= content_tag :li, link_to('Spiritual Formation', '#spiritual-formation', data: { toggle:'tab' }) %>
+
+            </ul>
+
+            <div class="tab-content">
+
+              <div id="life-skills" class="tab-pane fade in active">
+                <%= render 'life_skills' %>
+              </div>
+
+            </div>
+
+          </div>
+
+
         </div>
 
         <div class="other-posts">

@@ -2,12 +2,11 @@
 
   <div class="col-sm-3 menu">
 
-    <h3>Overview</h3>   <!-- TODO:  add anchors on each linked page -->
+    <h3>Overview</h3>
     <ul>
       <%= content_tag :li, link_to('Leadership', about_path) %>
       <%= content_tag :li, link_to('Faculty', about_path) %>
       <%= content_tag :li, link_to('Curriculum', academics_path) %>
-      <%= content_tag :li, link_to('Contact us', new_contact_path) %>
     </ul>
 
   </div>
@@ -18,8 +17,8 @@
     <ul>
       <%= content_tag :li, link_to('About', about_path) %>
       <%= content_tag :li, link_to('Academics', academics_path) %>
-      <%= content_tag :li, link_to('Student Life', student_life_path) %>
       <%= content_tag :li, link_to('Admissions', admissions_path) %>
+      <%= content_tag :li, link_to('Contact us', new_contact_path) %>
     </ul>
 
   </div>
