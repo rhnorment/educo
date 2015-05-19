@@ -1,16 +1,17 @@
 <div class="row">
 
-  <div class="col-sm-6 menu">
+  <div class="col-sm-7 menu">
     <ul>
       <%= content_tag :li, link_to('About', about_path) %>
       <%= content_tag :li, link_to('Academics', academics_path) %>
+      <%= content_tag :li, link_to('Student Life', student_life_path) %>
       <%= content_tag :li, link_to('Admissions', admissions_path) %>
       <%= content_tag :li, link_to('Contact', new_contact_path) %>
     </ul>
   </div>
 
-  <div class="col-sm-6 copyright">
-    Copyright &copy; Rivendell Education Company | Website by <%= link_to 'Red Sherpa', 'http://www.sherpa.red', target:'_blank' %>
+  <div class="col-sm-5 copyright">
+    Copyright &copy; Rivendell Worldview Education Company
   </div>
 
 </div>
