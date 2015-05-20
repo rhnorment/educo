@@ -6,6 +6,21 @@
 		margin-bottom: 130px;
 		-webkit-font-smoothing: antialiased;
 
+		hr {
+			display: none;
+		}
+
+		@media(min-width: 992px) {
+			&.tabs-smaller-margin {
+				margin-bottom: 65px;
+			}
+
+			.container {
+				padding-bottom: 60px;
+				border-bottom: 1px solid #e8e8e8;
+			}
+		}
+
 		@media(max-width: 991px) {
 			margin-bottom: 20px;
 		}
@@ -206,6 +221,10 @@
 				color: #797979;
 				margin-top: 10px;
 				line-height: 24px;
+
+				@media(max-width: 991px) {
+					text-align: center;
+				}
 			}
 		}
 	}
