@@ -43,7 +43,7 @@ class SitePagesController < ApplicationController
 
   def classically
     @body_id = 'blogpost'
-    @page_title = 'Approach the college core critically'
+    @page_title = 'Approach the college core classically'
   end
 
   def socratically
