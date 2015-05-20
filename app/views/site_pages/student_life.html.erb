@@ -1,0 +1,63 @@
+<div id="tabs">
+  <div class="container">
+
+    <div class="row header">
+      <h3>Student Life at SDC Rivendell</h3>
+      <p>We prepare students of honor, not just honor students.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 tabs-wrapper">
+
+        <ul class="nav nav-tabs">
+          <%= content_tag :li, link_to('Academic Facilities', '#academic-facilities', data: { toggle:'tab' }), class:'active' %>
+          <%= content_tag :li, link_to('Dining Facilities', '#dining-facilities', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Student Housing', '#student-housing', data: { toggle:'tab' }) %>
+        </ul>
+
+        <div class="tab-content">
+
+          <div id="academic-facilities" class="tab-pane fade in active">  <!-- ACADEMIC FACILITIES -->
+            <div class="col-md-6 info">
+              <h4>Your classroom ...(need ending)</h4>
+              <p>
+                Need a teaser paragraph about the socratic classroom and the 'world is your classroom.'
+              </p>
+            </div>
+            <div class="col-md-6 image">
+              <%= holder_tag '359x322', 'academic facilities', {}, class:'img-responsive' %>
+            </div>
+          </div>
+
+          <div id="dining-facilities" class="tab-pane fade">  <!-- DINING FACILITIES -->
+            <div class="col-md-6 image">
+              <%= holder_tag '359x322', 'dining facilities', {}, class:'img-responsive' %>
+            </div>
+            <div class="col-md-6 info">
+              <h4>Break bread with your classmates ...(need edit)</h4>
+              <p>
+                Need a teaser paragraph about the how we eat dinner as a community.
+              </p>
+            </div>
+          </div>
+
+          <div id="student-housing" class="tab-pane fade">  <!-- STUDENT HOUSING -->
+            <div class="col-md-6 info">
+              <h4>Live in community...(need ending)</h4>
+              <p>
+                Need a teaser paragraph about student housing.
+              </p>
+            </div>
+            <div class="col-md-6 image">
+              <%= holder_tag '359x322', 'student housing', {}, class:'img-responsive' %>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

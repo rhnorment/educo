@@ -1,6 +1,6 @@
 class SitePagesController < ApplicationController
 
-  # before_action   :walled_garden, if: :production?
+  before_action   :walled_garden, if: :production?
 
   def home
     render layout: 'site'
@@ -57,7 +57,8 @@ class SitePagesController < ApplicationController
   end
 
   def student_life
-    @body_id = 'services'
+    @body_id = 'features'
+    @page_title = 'Student Life'
   end
 
   def admissions
