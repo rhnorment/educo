@@ -3,8 +3,8 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
+
   slideshow.initialize()
-  # services.initialize()
 
   $('.flexslider').flexslider
     directionNav: false

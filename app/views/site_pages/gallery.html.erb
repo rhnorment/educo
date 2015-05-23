@@ -1,0 +1,25 @@
+<div id="showcase">
+  <div class="container">
+
+    <div class="row header">
+
+      <div class="col-md-12">
+        <h3>SDC Rivendell Gallery</h3>
+        <p>
+          You have to roll up your sleeves and be a stonecutter before you become a sculptor – command of craft precedes art.
+        </p>
+      </div>
+
+      <div class="col-md-12 filtering">
+        <ul id="filters">
+          <%= content_tag :li, link_to('All', '#', class:'active', data: { filter: '*' }) %>
+          <%= content_tag :li, link_to('Academics', '#', data: { filter: '.academics' }) %>
+          <%= content_tag :li, link_to('Housing', '#', data: { filter: '.housing' }) %>
+          <%= content_tag :li, link_to('Dining', '#', data: { filter: '.dining' }) %>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</div>
