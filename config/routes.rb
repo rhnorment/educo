@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get           '/academics/holistically',  to: 'site_pages#holistically'
 
   get           '/student_life',            to: 'site_pages#student_life'
+  get           '/student_life/gallery',    to: 'site_pages#gallery'
 
   get           '/admissions',              to: 'site_pages#admissions'
   get           '/admissions/apply_now',    to: 'site_pages#apply_now'

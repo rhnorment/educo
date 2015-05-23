@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hm4cykqp2
+  api_key: '242771594664151'
+  api_secret: jeHY4whHUd1iiaHnIN4YUd9O1vw
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hm4cykqp2
+  api_key: '242771594664151'
+  api_secret: jeHY4whHUd1iiaHnIN4YUd9O1vw
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hm4cykqp2
+  api_key: '242771594664151'
+  api_secret: jeHY4whHUd1iiaHnIN4YUd9O1vw
+  enhance_image_tag: true
+  static_image_support: false

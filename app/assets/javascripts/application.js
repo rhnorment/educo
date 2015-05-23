@@ -14,7 +14,9 @@
 //= require jquery_ujs
 //= require jquery.turbolinks
 //= require bootstrap-sprockets
-//= require holder
-//= require jquery.flexslider.min
+//= require vendor/holder
+//= require vendor/jquery.flexslider.min
+//= require vendor/jquery.isotope.min
+//= require vendor/imagesloaded
 //= require bootstrapValidator.min
 //= require turbolinks

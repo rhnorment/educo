@@ -61,6 +61,11 @@ class SitePagesController < ApplicationController
     @page_title = 'Student Life'
   end
 
+  def gallery
+    @body_id = 'gallery'
+    @page_title = 'Rivendell Gallery'
+  end
+
   def admissions
     @body_id = 'features'
     @page_title = 'Admissions'

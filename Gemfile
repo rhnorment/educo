@@ -20,10 +20,11 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'infusionsoft'
 gem 'holder_rails'
 gem 'nav_lynx'
+gem 'carrierwave'
+gem 'cloudinary'
 
 # development gems:
 group :development do
-	gem 'spring'
   gem 'faker'
   gem 'populator'
 	gem 'sqlite3'
