@@ -22,7 +22,7 @@ class Staff < ActiveRecord::Base
 
   validates   :staff_type, inclusion: { in: TYPES }
 
-  validates   :photo, format: { with: /\w+.(gif|jpg|png)\z/i, allow_blank: true }
+  validates   :photo, format: { with: /.*\.(jpg|gif|png)/, allow_blank: true }
 
   # getter method for last name
   def last_name
