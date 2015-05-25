@@ -6,14 +6,13 @@ class LeadsController < ApplicationController
 
   def new
     @lead = Lead.new
-
-    session[:trigger_tag_id] = 271
   end
 
   def create
     lead = Lead.new(lead_params)
 
     lead.trigger_tag_id = session[:trigger_tag_id]
+    lead.leadsource_id = session[:leadsource_id]
 
     if lead.save
       @message = 'Please download your brochure'

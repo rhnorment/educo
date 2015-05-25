@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150523205735) do
+ActiveRecord::Schema.define(version: 20150525204510) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 20150523205735) do
     t.integer  "trigger_tag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "leadsource_id"
   end
 
   create_table "staffs", force: true do |t|
