@@ -1,5 +1,7 @@
 class SitePagesController < ApplicationController
 
+  caches_page :home
+
   def home
     render layout: 'site'
   end
