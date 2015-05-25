@@ -1,6 +1,6 @@
 class SitePagesController < ApplicationController
 
-  # before_action   :walled_garden, if: :production?
+  before_action   :walled_garden, if: :production?
 
   def home
     render layout: 'site'
