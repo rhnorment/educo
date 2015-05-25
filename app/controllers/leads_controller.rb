@@ -2,6 +2,8 @@ class LeadsController < ApplicationController
 
   layout 'opt_in'
 
+  caches_page :new
+
   def new
     @lead = Lead.new
 
