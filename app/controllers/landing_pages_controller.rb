@@ -11,6 +11,15 @@ class LandingPagesController < ApplicationController
     session[:trigger_tag_id] = 271
   end
 
+  def naums
+    @page_title = 'Welcome NAUMS Members!'
+    @heading = 'Welcome NAUMS Members!'
+    @sub_heading = 'Thank you for visiting our site.'
+
+    session[:leadsource_id] = 277
+    session[:trigger_tag_id] = 271
+  end
+
   def eight_ways
     @page_title = '8 Ways Rivendell Delivers the College Core'
   end
