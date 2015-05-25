@@ -18,5 +18,7 @@ module Servco2
     config.exceptions_app =  self.routes
 
     config.nav_lynx.selected_class = 'active'
+
+    config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deploy"
   end
 end
