@@ -1,6 +1,6 @@
 class SitePagesController < ApplicationController
 
-  caches_page :home, :about, :academics, :student_life, :admissions
+  caches_page         :home, :about, :academics, :student_life, :admissions
 
   before_action       :set_leadsource_id
 

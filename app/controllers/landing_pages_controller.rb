@@ -12,8 +12,6 @@ class LandingPagesController < ApplicationController
 
   def naums
     @page_title = 'Welcome NAUMS Members!'
-    @heading = 'Welcome NAUMS Members!'
-    @sub_heading = 'Thank you for visiting our site.'
 
     session[:leadsource_id] = 277
   end

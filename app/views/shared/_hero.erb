@@ -1,33 +1,13 @@
 <div class="container">
 
-  <% if heading %>
-
-      <%= content_tag :h1, heading, class:'hero-text animated fadeInDown' %>
-
-  <% else %>
-
     <h1 class="hero-text animated fadeInDown">
         Spend your first 16-months<br />
         of college with us
     </h1>
 
-  <% end %>
-
-  <% if sub_heading %>
-
-      <%= content_tag :p, sub_heading, class:'sub-text animated fadeInDown' %>
-
-  <% else %>
-
-    <p class="sub-text animated fadeInDown">
-        Experience the journey of a lifetime.
-    </p>
-
-  <% end %>
-
-  <div class="cta animated fadeInDown">
-    <%= link_to 'Request a brochure', new_lead_path, class:'button-outline' %>
-  </div>
+    <div class="cta animated fadeInDown">
+        <%= link_to 'Request a brochure', new_lead_path, class:'button-outline' %>
+    </div>
 
   <%= content_tag :div, nil, class:'img' %>
 
