@@ -1,6 +1,7 @@
 class SitePagesController < ApplicationController
 
   caches_page :home, :about, :academics, :student_life, :admissions
+  
 
   def home
     render layout: 'site'
