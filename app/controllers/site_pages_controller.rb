@@ -1,7 +1,8 @@
 class SitePagesController < ApplicationController
 
   caches_page :home, :about, :academics, :student_life, :admissions
-  
+
+  before_action       :set_leadsource_id
 
   def home
     render layout: 'site'
@@ -76,5 +77,11 @@ class SitePagesController < ApplicationController
     @body_id = 'features'
     @page_title = 'Apply Now'
   end
+
+  private
+
+    def set_leadsource_id
+      session[:leadsource_id] = 267
+    end
 
 end
