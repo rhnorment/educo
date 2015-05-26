@@ -6,6 +6,8 @@ class LeadsController < ApplicationController
 
   def new
     @lead = Lead.new
+
+    session[:trigger_tag_id] = 271
   end
 
   def create

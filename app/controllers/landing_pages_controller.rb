@@ -8,7 +8,6 @@ class LandingPagesController < ApplicationController
     @page_title = 'An Exceptional College Core Program'
 
     session[:leadsource_id] = 265
-    session[:trigger_tag_id] = 271
   end
 
   def naums
@@ -17,7 +16,6 @@ class LandingPagesController < ApplicationController
     @sub_heading = 'Thank you for visiting our site.'
 
     session[:leadsource_id] = 277
-    session[:trigger_tag_id] = 271
   end
 
   def eight_ways
