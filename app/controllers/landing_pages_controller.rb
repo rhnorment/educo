@@ -18,8 +18,4 @@ class LandingPagesController < ApplicationController
     session[:leadsource_id] = 277
   end
 
-  def eight_ways
-    @page_title = '8 Ways Rivendell Delivers the College Core'
-  end
-
 end

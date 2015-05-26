@@ -22,7 +22,6 @@ Rails.application.routes.draw do
 
   get           '/college-core',            to: 'landing_pages#student'
   get           '/naums',                   to: 'landing_pages#naums'
-  get           '/eight-ways',              to: 'landing_pages#eight_ways'
 
   resources     :leads,                     path: '/students', only: [:new, :create]
   resources     :contacts,                  only: [:new, :create]
