@@ -26,8 +26,7 @@ class Staff < ActiveRecord::Base
 
   # getter method for last name
   def last_name
-    names = name.split(' ')
-    names.pop
+    name.split(' ').pop
   end
 
 end
