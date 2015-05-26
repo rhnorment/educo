@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'jquery-turbolinks'
 gem 'actionpack-page_caching'
+gem 'puma'
 
 #helper gems:
 gem 'bootstrap-sass', '3.3.3'
