@@ -10,7 +10,7 @@ class SitePagesController < ApplicationController
 
   def about
     @body_id = 'about-us'
-    @page_title = 'About'
+    @page_title = 'About us'
   end
 
   def academics
