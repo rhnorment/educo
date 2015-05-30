@@ -25,15 +25,18 @@ class Lead < ActiveRecord::Base
   validates       :email, format: { with: /\A\S+@\S+\z/ }
 
   # callbacks:
-  after_create    :add_lead_to_infusionsoft
+  after_create    :add_contact_to_infusionsoft
 
-  # add lead to infusionsoft and assign to gauntlet.
-  def add_lead_to_infusionsoft
+  def add_contact_to_infusionsoft
     contact_id = Infusionsoft.contact_add_with_dup_check( { FirstName: self.first_name,
                                                 LastName: self.last_name,
                                                 Email: self.email, Phone1: self.phone, LeadSourceId: self.leadsource_id },
                                                 'EmailAndName'
     )
+    add_contact_to_group(contact_id) if self.trigger_tag_id.present?
+  end
+
+  def add_contact_to_group(contact_id)
     Infusionsoft.contact_add_to_group(contact_id, self.trigger_tag_id)
   end
 
