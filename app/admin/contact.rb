@@ -1,5 +1,5 @@
 ActiveAdmin.register Contact do
 
-  menu priority: 3
+  menu priority: 2
 
 end

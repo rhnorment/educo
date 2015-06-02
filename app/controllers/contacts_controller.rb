@@ -1,12 +1,12 @@
 class ContactsController < ApplicationController
 
+  before_action   :set_body_id
+
   def new
-    @body_id = 'contact-us'
     @contact = Contact.new
   end
 
   def create
-    @body_id = 'contact-us'
     @contact = Contact.new(contact_params)
 
     if @contact.save
@@ -19,6 +19,10 @@ class ContactsController < ApplicationController
   end
 
   private
+
+    def set_body_id
+      @body_id = 'contact-us'
+    end
 
     def contact_params
       params.require(:contact).permit(:name, :email, :phone, :message)

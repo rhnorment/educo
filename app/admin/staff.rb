@@ -14,7 +14,7 @@
 
 ActiveAdmin.register Staff do
 
-  menu priority: 2
+  menu priority: 4
 
   permit_params   :name, :title, :bio, :staff_type, :photo
 

@@ -1,6 +1,6 @@
 ActiveAdmin.register Lead do
 
-  menu priority: 5
+  menu priority: 3
 
 
 end
