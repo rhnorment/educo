@@ -1,2 +1,24 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+<section id="showcase">
+  <div class="container">
+
+    <div class="row header">
+      <div class="col-md-12">
+        <h3>Rivendell Lecture Series</h3>
+        <p>The best selection of our curriculum made public for you.</p>
+      </div>
+    </div>
+
+    <div class="row"></div>
+      <div class="col-md-12">
+
+        <% @events.each do |event| %>
+
+            <%= render event %>
+
+        <% end %>
+
+      </div>
+    </div>
+
+  </div>
+</section>

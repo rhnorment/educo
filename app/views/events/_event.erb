@@ -1,0 +1,11 @@
+<div class="project">
+
+  <%= content_tag :h3, event.name %>
+
+  <figure class="screen">
+    <%= cl_image_tag event.photo, class:'img-responsive', alt: "#{event.name} photo" %>
+  </figure>
+
+  <%= content_tag :p, sanitize(event.description), class:'description' %>
+
+</div>

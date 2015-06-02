@@ -29,6 +29,18 @@ ActiveAdmin.register Event do
   permit_params   :name, :description, :date, :time, :venue, :address1, :address2, :city, :state, :zip_code,
                   :speaker, :title, :bio, :photo
 
+
+  index do
+    id_column
+    column :name
+    column :description
+    column :date
+    column :time
+    column :venue
+    column :speaker
+    actions
+  end
+
   show do
     attributes_table do
       row :name

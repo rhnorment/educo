@@ -4,10 +4,12 @@ class EventsController < ApplicationController
 
   def index
     @page_title = 'Rivendell Lecture Series'
+    @events = Event.upcoming.limit(3)
   end
 
   def show
     @page_title = 'Exceptional Events'
+    @event = Event.find(params[:id])
   end
 
   private

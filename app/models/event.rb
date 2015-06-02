@@ -36,4 +36,6 @@ class Event < ActiveRecord::Base
     errors.add(:date, 'cannot be in the past') if date.present? && date < Date.today
   end
 
+  scope           :upcoming,    -> { where('date > ?', Time.now).order(date: :asc) }
+
 end
