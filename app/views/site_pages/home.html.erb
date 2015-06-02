@@ -1,19 +1,6 @@
 <section id="hero">
 
-  <div class="container">
-
-    <h1 class="hero-text animated fadeInDown">
-      Spend your first 16-months<br /> of college with us
-    </h1>
-
-    <div class="cta animated fadeInDown">
-      <%= link_to 'Request a brochure', new_lead_path, class:'button-outline' %>
-      <%= link_to 'Apply now', admissions_apply_now_path, class:'button' %>
-    </div>
-
-    <%= content_tag :figure, nil, class:'img animated fadeInRight' %>
-
-  </div>
+  <%= render 'shared/hero' %>
 
 </section>
 
