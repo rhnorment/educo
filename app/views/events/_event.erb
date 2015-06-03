@@ -2,11 +2,17 @@
 
   <%= content_tag :h3, event.name %>
 
-  <figure class="screen">
-    <%= cl_image_tag event.photo, class:'img-responsive', alt: "#{event.name} photo" %>
-  </figure>
+  <div class="row">
 
-  <%= content_tag :p, sanitize(event.description), class:'description' %>
+    <figure class="col-md-6 screen">
+      <%= cl_image_tag event.photo, class:'img-responsive', alt: "#{event.speaker} photo" %>
+    </figure>
+
+    <div class="col-md-6 info">
+      <%= content_tag :p, sanitize(event.description), class:'description' %>
+    </div>
+
+  </div>
 
   <%= content_tag :div, nil, class:'divider' %>
 

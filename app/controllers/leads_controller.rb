@@ -14,7 +14,7 @@ class LeadsController < ApplicationController
     lead = Lead.new(lead_params)
 
     lead.trigger_tag_id = session[:trigger_tag_id]
-    lead.leadsource_id = session[:leadsource_id] || DEFAULT_LEADSOURCE_ID
+    lead.leadsource_id = session[:leadsource_id] ||= DEFAULT_LEADSOURCE_ID
 
     if lead.save
       @message = 'Please download your brochure'

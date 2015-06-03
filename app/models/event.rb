@@ -26,19 +26,25 @@ class Event < ActiveRecord::Base
 
   mount_uploader  :photo, PictureUploader
 
-  validates       :name, :description, :date, :time, :venue, :address1, :city, :state, :zip_code,
-                  :speaker, :bio, presence: true
+  validates           :name, :description, :date, :time, :venue, :address1, :city, :state, :zip_code,
+                      :speaker, :bio, presence: true
 
-  validates       :photo, format: { with: /.*\.(jpg|gif|png)/, allow_blank: true }
+  validates           :photo, format: { with: /.*\.(jpg|gif|png)/, allow_blank: true }
 
-  validate        :date_not_in_past
+  validate            :date_not_in_past
 
-  def to_param
-    slug
+  before_validation   :generate_slug
+
+  def generate_slug
+    self.slug ||= name.parameterize if name
   end
 
   def date_not_in_past
     errors.add(:date, 'cannot be in the past') if date.present? && date < Date.today
+  end
+
+  def to_param
+    slug
   end
 
   scope           :upcoming,    -> { where('date > ?', Time.now).order(date: :asc) }
