@@ -29,8 +29,8 @@ ActiveAdmin.register Event do
     permit_params   :name, :description, :date, :time, :venue, :address1, :address2, :city, :state, :zip_code,
                     :speaker, :title, :bio, :photo
 
-    def to_param
-      slug
+    controller do
+      defaults finder: :find_by_slug
     end
 
     index do
