@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 20150602183259) do
 
   create_table "events", force: true do |t|
     t.string   "name"
+    t.string   "slug"
     t.text     "description"
     t.date     "date"
     t.time     "time"

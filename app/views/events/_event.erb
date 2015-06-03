@@ -8,4 +8,10 @@
 
   <%= content_tag :p, sanitize(event.description), class:'description' %>
 
+  <%= content_tag :div, nil, class:'divider' %>
+
+  <div class="visit">
+    <%= link_to 'Learn more', event, class:'button' %>
+  </div>
+
 </div>

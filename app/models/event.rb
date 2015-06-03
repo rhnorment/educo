@@ -4,6 +4,7 @@
 #
 #  id          :integer          not null, primary key
 #  name        :string(255)
+#  slug        :string(255)
 #  description :text
 #  date        :date
 #  time        :time
@@ -31,6 +32,10 @@ class Event < ActiveRecord::Base
   validates       :photo, format: { with: /.*\.(jpg|gif|png)/, allow_blank: true }
 
   validate        :date_not_in_past
+
+  def to_param
+    slug
+  end
 
   def date_not_in_past
     errors.add(:date, 'cannot be in the past') if date.present? && date < Date.today
