@@ -24,7 +24,7 @@ Rails.application.routes.draw do
 
   resources     :leads,                     path: '/students', only: [:new, :create]
   resources     :contacts,                  only: [:new, :create]
-  resources     :events,                    only: [:index, :show]
+  # resources     :events,                    only: [:index, :show]
 
   get           '/404',                     to: 'errors#not_found'
   get           '/422',                     to: 'errors#unprocessable'

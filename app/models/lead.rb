@@ -33,7 +33,14 @@ class Lead < ActiveRecord::Base
                                                 Email: self.email, Phone1: self.phone, LeadSourceId: self.leadsource_id },
                                                 'EmailAndName'
     )
+
+    email_optin(self.email)
+
     add_contact_to_group(contact_id) if self.trigger_tag_id.present?
+  end
+
+  def email_optin(email)
+    Infusionsoft.email_optin(email, 'completed form')
   end
 
   def add_contact_to_group(contact_id)
