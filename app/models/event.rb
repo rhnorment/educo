@@ -5,9 +5,10 @@
 #  id          :integer          not null, primary key
 #  name        :string(255)
 #  slug        :string(255)
+#  summary     :text
 #  description :text
 #  date        :date
-#  time        :time
+#  time        :string(255)
 #  venue       :string(255)
 #  address1    :string(255)
 #  address2    :string(255)
@@ -26,7 +27,7 @@ class Event < ActiveRecord::Base
 
   mount_uploader  :photo, PictureUploader
 
-  validates           :name, :description, :date, :time, :venue, :address1, :city, :state, :zip_code,
+  validates           :name, :summary, :date, :time, :venue, :address1, :city, :state, :zip_code,
                       :speaker, :bio, presence: true
 
   validates           :photo, format: { with: /.*\.(jpg|gif|png)/, allow_blank: true }

@@ -58,9 +58,10 @@ ActiveRecord::Schema.define(version: 20150602183259) do
   create_table "events", force: true do |t|
     t.string   "name"
     t.string   "slug"
+    t.text     "summary"
     t.text     "description"
     t.date     "date"
-    t.time     "time"
+    t.string   "time"
     t.string   "venue"
     t.string   "address1"
     t.string   "address2"
