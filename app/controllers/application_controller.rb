@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
     end
 
     def walled_garden
-      redirect_to college_core_url
+      redirect_to :back
     end
 
     def set_global_vars

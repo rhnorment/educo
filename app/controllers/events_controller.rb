@@ -1,5 +1,6 @@
 class EventsController < ApplicationController
 
+  before_action   :walled_garden
   before_action   :set_body_id
 
   def index
