@@ -9,8 +9,30 @@
       <%= content_tag :figcaption, event.speaker, class:'m-t-sm' %>
     </figure>
 
-    <div class="col-md-6 info">
-      <%= content_tag :p, sanitize(event.description), class:'description' %>
+    <div class="col-md-6 description">
+
+      <p><strong>Description:  </strong><%= sanitize(event.description) %></p>
+
+      <p><strong>Date:  </strong><%= event.date %></p>
+
+      <p><strong>Time:  </strong><%= event.time %></p>
+
+      <p><strong>Location:  </strong><%= event.venue %></p>
+
+      <p>
+        <strong>Address:</strong><br />
+
+        <%= event.address1 %><br />
+
+        <% if event.address2.present? %>
+
+            <%= event.address2 %><br />
+
+        <% end %>
+
+        <%= event.city %>, <%= event.state %>  <%= event.zip_code %>
+      </p>
+
     </div>
 
   </div>
