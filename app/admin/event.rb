@@ -1,5 +1,3 @@
-ActiveAdmin.register Event do
-
 # == Schema Information
 #
 # Table name: events
@@ -7,9 +5,10 @@ ActiveAdmin.register Event do
 #  id          :integer          not null, primary key
 #  name        :string(255)
 #  slug        :string(255)
+#  summary     :text
 #  description :text
 #  date        :date
-#  time        :time
+#  time        :string(255)
 #  venue       :string(255)
 #  address1    :string(255)
 #  address2    :string(255)
@@ -24,64 +23,69 @@ ActiveAdmin.register Event do
 #  updated_at  :datetime
 #
 
-    menu priority: 5
+ActiveAdmin.register Event do
 
-    permit_params   :name, :description, :date, :time, :venue, :address1, :address2, :city, :state, :zip_code,
-                    :speaker, :title, :bio, :photo
+  menu priority: 5
 
-    controller do
-      defaults finder: :find_by_slug
-    end
+  permit_params   :name, :summary, :description, :date, :time, :venue, :address1, :address2, :city, :state, :zip_code,
+                  :speaker, :title, :bio, :photo
 
-    index do
-      id_column
-      column :name
-      column :slug
-      column :description
-      column :date
-      column :time
-      column :venue
-      column :speaker
-      actions
-    end
+  controller do
+    defaults finder: :find_by_slug
+  end
 
-    show do
-      attributes_table do
-        row :name
-        row :description
-        row :date
-        row :time
-        row :venue
-        row :address1
-        row :address2
-        row :city, :state, :zip_code
-        row :speaker
-        row :bio
-        row :photo do
-          cl_image_tag(event.photo_url)
-        end
+  index do
+    id_column
+    column :name
+    column :slug
+    column :summary
+    column :date
+    column :time
+    column :venue
+    column :speaker
+    actions
+  end
+
+  show do
+    attributes_table do
+      row :name
+      row :summary
+      row :description
+      row :date
+      row :time
+      row :venue
+      row :address1
+      row :address2
+      row :city, :state, :zip_code
+      row :speaker
+      row :bio
+      row :photo do
+        cl_image_tag(event.photo_url)
       end
-      active_admin_comments
     end
+    active_admin_comments
+  end
 
-    form do |f|
-      f.inputs 'Event Details' do
-        f.input :name
-        f.input :description
-        f.input :date, as: :datetime_select, start_year: 2015
-        f.input :time, as: :time_select, label: 'End Time'
-        f.input :venue
-        f.input :address1
-        f.input :address2
-        f.input :city
-        f.input :state
-        f.input :zip_code
-        f.input :speaker
-        f.input :title
-        f.input :bio
-        f.input :photo, as: :file
-      end
-      f.actions
+  form do |f|
+    f.inputs 'Event Details' do
+      f.input :name
+      f.input :summary
+      f.input :description
+      f.input :date, as: :datetime_select, start_year: 2015
+      f.input :time
+      f.input :venue
+      f.input :address1
+      f.input :address2
+      f.input :city
+      f.input :state
+      f.input :zip_code
+      f.input :speaker
+      f.input :title
+      f.input :bio
+      f.input :photo, as: :file
     end
+    f.actions
+  end
 
 end
+
