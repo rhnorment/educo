@@ -25,7 +25,7 @@
 
 class Event < ActiveRecord::Base
 
-  mount_uploader  :photo, PictureUploader
+  mount_uploader      :photo, PictureUploader
 
   validates           :name, :summary, :date, :time, :venue, :address1, :city, :state, :zip_code,
                       :speaker, :bio, presence: true
