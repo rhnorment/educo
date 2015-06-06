@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.1'
+
 # application gems:
 gem 'rails', '4.1.0'
 gem 'sass-rails', '~> 5.0.0'
@@ -39,7 +41,7 @@ end
 # test and development gems:
 group :test, :development do
   gem 'minitest'
-  gem 'rspec-rails', '~> 2.14.0.rc1'
+  gem 'rspec-rails'
 end
 
 # production gems
