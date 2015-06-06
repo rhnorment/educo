@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.2.1'
 
 # application gems:
-gem 'rails', '4.1.0'
+gem 'rails', '4.2.1'
 gem 'sass-rails', '~> 5.0.0'
 gem 'font-awesome-sass'
 gem 'uglifier', '>= 1.3.0'
@@ -28,20 +28,16 @@ gem 'cloudinary'
 
 # development gems:
 group :development do
-  gem 'faker'
-  gem 'populator'
 	gem 'sqlite3'
-end
-
-# test gems:
-group :test do
-  gem 'capybara'
 end
 
 # test and development gems:
 group :test, :development do
-  gem 'minitest'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'ffaker'
 end
 
 # production gems

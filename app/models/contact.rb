@@ -21,8 +21,8 @@ class Contact < ActiveRecord::Base
 
   # methods:
   def send_confirmation_emails
-    ContactMailer.contact_confirmation(self).deliver
-    ContactMailer.internal_confirmation(self).deliver
+    ContactMailer.contact_confirmation(self).deliver_now
+    ContactMailer.internal_confirmation(self).deliver_now
   end
 
 end
