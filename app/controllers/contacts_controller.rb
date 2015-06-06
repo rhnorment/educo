@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
 
     if @contact.save
       @page_title = 'Thank you!'
-      @message = 'Thank you for inquiring about Rivendell 5-Pursuits Program.  One of our staff will be in touch with you soon.'
+      @message = 'Thank you for inquiring about the Rivendell Program.  One of our staff will be in touch with you soon.'
     else
       @page_title = 'Whoops!'
       @message = 'There was a problem with your submission.  Please press the back button and try again.'
