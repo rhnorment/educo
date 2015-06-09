@@ -7,7 +7,11 @@
       <%= content_tag :li, link_to('Donate to Rivendell', 'http://www.takebackeducation.org', target:'_blank') %>
       <%= content_tag :li, link_to('Leadership', about_path) %>
       <%= content_tag :li, link_to('Faculty', about_path) %>
-      <%= content_tag :li, link_to('Curriculum', academics_sequentially_path) %>
+      <li>
+        <%= link_to academics_sequentially_path do %>
+            Sequenced Modular Curriculum<sup><small>TM</small></sup>
+        <% end %>
+      </li>
     </ul>
 
   </div>
