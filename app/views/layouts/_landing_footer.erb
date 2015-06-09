@@ -4,9 +4,10 @@
 
     <h3>Overview</h3>
     <ul>
+      <%= content_tag :li, link_to('Donate to Rivendell', 'http://www.takebackeducation.org', target:'_blank') %>
       <%= content_tag :li, link_to('Leadership', about_path) %>
       <%= content_tag :li, link_to('Faculty', about_path) %>
-      <%= content_tag :li, link_to('Curriculum', academics_path) %>
+      <%= content_tag :li, link_to('Curriculum', academics_sequentially_path) %>
     </ul>
 
   </div>
@@ -40,10 +41,12 @@
 
     <h3>Industry Friends</h3>
     <ul>
-      <%= content_tag :li, link_to('Rivendell Scholarship Fund', 'http://www.takebackeducation.org', target:'_blank') %>
       <%= content_tag :li, link_to('Classical Conversations', 'https://www.classicalconversations.com/articles', target:'_blank') %>
       <%= content_tag :li, link_to('Summit Ministries', 'http://www.summit.org/blogs/the-presidents-desk/', target:'_blank') %>
-      <%= content_tag :li, link_to('BreakPoint', 'http://thepoint.breakpoint.org/tp-home', target:'_blank') %>
+      <%= content_tag :li, link_to('Worldview Academy', 'http://www.worldview.org', target:'_blank') %>
+      <%= content_tag :li, link_to('TeenPact', 'http://teenpact.com', target:'_blank') %>
+      <%= content_tag :li, link_to('NAUMS', 'http://www.naums.net', target:'_blank') %>
+      <%= content_tag :li, link_to('Minnesota Family Council', 'http://www.mfc.org', target:'_blank') %>
     </ul>
 
   </div>
