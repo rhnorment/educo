@@ -22,6 +22,7 @@ Rails.application.routes.draw do
 
   get           '/college-core',            to: 'landing_pages#student'
 
+  resources     :gallery_photos,            path: '/gallery',  only: [:index]
   resources     :leads,                     path: '/students', only: [:new, :create]
   resources     :contacts,                  only: [:new, :create]
   resources     :events,                    only: [:index, :show]

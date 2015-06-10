@@ -15,7 +15,7 @@ class GalleryPhoto < ActiveRecord::Base
 
   mount_uploader  :image_file, PictureUploader
 
-  CATEGORIES  = %w(Academic Athletic Cultural Dining Italy Other Residential )
+  CATEGORIES  = %w(Academic Athletic Cultural Dining Italy Other Residential)
 
   validates   :caption, :category, presence: true
 

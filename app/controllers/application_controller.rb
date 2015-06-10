@@ -4,15 +4,15 @@ class ApplicationController < ActionController::Base
 
   before_filter     :set_global_vars
 
+  def production?
+    Rails.env.production?
+  end
+
+  def walled_garden
+    redirect_to root_url
+  end
+
   private
-
-    def production?
-      Rails.env.production?
-    end
-
-    def walled_garden
-      redirect_to root_path
-    end
 
     def set_global_vars
       @company_name = 'Rivendell Program'
