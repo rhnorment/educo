@@ -20,19 +20,22 @@
 
 class VisitsController < ApplicationController
 
+  before_action   :set_body_id
+
   def new
-    @body_id = 'contact'
     @visit = Visit.new
   end
 
   def create
-    @body_id = 'contact'
-
     visit = Visit.new(visit_params)
     visit.save
   end
 
   private
+
+    def set_body_id
+      @body_id = 'contact-us'
+    end
 
     def visit_params
       params.require(:visit).permit(:student_name, :parent_name, :student_phone, :parent_phone,

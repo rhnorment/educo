@@ -1,0 +1,62 @@
+<%= form_for @visit, html: { id:'visit-form' } do |f| %>
+
+    <div class="form-group">
+      <%= f.label :student_name %>
+      <%= f.text_field :student_name, class:'form-control', autofocus:true %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :parent_name %>
+      <%= f.text_field :parent_name, class:'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :student_phone %>
+      <%= f.telephone_field :student_phone, class:'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :parent_phone %>
+      <%= f.telephone_field :parent_phone, class:'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :student_email %>
+      <%= f.email_field :student_email, class:'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :parent_email %>
+      <%= f.email_field :parent_email, class:'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :student_dob, 'Student date-of-birth' %>
+      <%= f.date_select :student_dob, class:'form-control', order: [:month, :day, :year] %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :parent_dob, 'Parent date-of-birth' %>
+      <%= f.date_select :parent_dob, class:'form-control', order: [:month, :day, :year] %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :travel_dates, 'Preferred travel dates' %>
+      <%= f.text_area :travel_dates, class:'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :travel_times, 'Preferred travel dates' %>
+      <%= f.text_area :travel_times, class:'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :airport, 'Preferred airport' %>
+      <%= f.text_field :airport, class:'form-control' %>
+    </div>
+
+    <div class="submit">
+      <%= f.submit 'Request visit', class:'button button-small' %>
+    </div>
+
+<% end %>
