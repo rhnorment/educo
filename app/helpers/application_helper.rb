@@ -5,7 +5,7 @@ module ApplicationHelper
   end
 
   def render_hero_cta
-    content = link_to 'Request a brochure', new_lead_path, class: 'button-outline'
+    content = link_to 'Request a free visit', new_visit_path, class: 'button-outline'
     content << link_to('Apply now', admissions_apply_now_path, class: 'button') if controller_name == 'site_pages'
     content
   end
