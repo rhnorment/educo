@@ -27,7 +27,9 @@ class VisitsController < ApplicationController
 
   def create
     @body_id = 'contact'
-    @visit = Visit.new(visit_params)
+
+    visit = Visit.new(visit_params)
+    visit.save
   end
 
   private
