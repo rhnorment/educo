@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150610192822) do
+ActiveRecord::Schema.define(version: 20150612134218) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     limit: 255
@@ -104,6 +104,22 @@ ActiveRecord::Schema.define(version: 20150610192822) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "photo",      limit: 255
+  end
+
+  create_table "visits", force: :cascade do |t|
+    t.string   "student_name"
+    t.string   "parent_name"
+    t.string   "student_phone"
+    t.string   "parent_phone"
+    t.string   "student_email"
+    t.string   "parent_email"
+    t.date     "student_dob"
+    t.date     "parent_dob"
+    t.text     "travel_dates"
+    t.text     "travel_times"
+    t.string   "airport"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end

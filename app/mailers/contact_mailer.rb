@@ -12,4 +12,9 @@ class ContactMailer < ActionMailer::Base
     mail to: 'admissions@rivendellsanctuary.com', subject: 'SDC Rivendell WEBSITE INQUIRY -- URGENT'
   end
 
+  def visit_request(visit)
+    @visit = visit
+    mail to: 'admissions@rivendellsanctuary.com', subject: 'NEW VISIT REQUEST'
+  end
+
 end
