@@ -20,9 +20,8 @@ Rails.application.routes.draw do
   get           '/admissions',              to: 'site_pages#admissions'
   get           '/admissions/apply_now',    to: 'site_pages#apply_now'
 
-  get           '/college-core',            to: 'landing_pages#student'
-
   resources     :gallery_photos,            path: '/gallery',  only: [:index]
+  resources     :visits,                    only: [:new, :create]
   resources     :leads,                     path: '/students', only: [:new, :create]
   resources     :contacts,                  only: [:new, :create]
   resources     :events,                    only: [:index, :show]
