@@ -1,2 +1,9 @@
-<h1>Visits#create</h1>
-<p>Find me in app/views/visits/create.html.erb</p>
+<section id="info">
+  <div class="container">
+    <%= content_tag :h3, @page_title %>
+
+    <%= content_tag :p, @message %>
+
+    <%= render 'form' if @visit.errors.any? %>
+  </div>
+</section>

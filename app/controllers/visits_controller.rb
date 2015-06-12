@@ -23,12 +23,20 @@ class VisitsController < ApplicationController
   before_action   :set_body_id
 
   def new
+    @page_title = 'Request a visit'
     @visit = Visit.new
   end
 
   def create
-    visit = Visit.new(visit_params)
-    visit.save
+    @visit = Visit.new(visit_params)
+
+    if @visit.save
+      @page_title = 'Thank you!'
+      @message = 'Thank you for requesting a visit to our Minnesota campus.  One of our Admissions Counselors will get back to you shortly.'
+    else
+      @page_title = 'Whoops!'
+      @message = 'There was an error with your request.  Please try again.'
+    end
   end
 
   private

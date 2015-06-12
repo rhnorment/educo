@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   get           '/admissions/apply_now',    to: 'site_pages#apply_now'
 
   resources     :gallery_photos,            path: '/gallery',  only: [:index]
-  resources     :visits,                    only: [:new, :create]
+  resources     :visits,                    only: [:new, :create], path_names: { new: 'request_visit' }
   resources     :leads,                     path: '/students', only: [:new, :create]
   resources     :contacts,                  only: [:new, :create]
   resources     :events,                    only: [:index, :show]
