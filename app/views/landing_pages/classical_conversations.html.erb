@@ -200,3 +200,107 @@
 
   </div>
 </section>
+
+<section id="second-option">
+  <div class="container">
+
+    <%= render 'shared/academic_features' %>
+
+  </div>
+</section>
+
+<section id="mobile">
+  <div class="container">
+
+    <div class="row">
+      <figure class="col-xs-6 hidden-xs">
+        <%= holder_tag '326x297', 'Need VISIT US image 326x297', class:'device img-responsive', alt:'free visit photo' %>
+
+      </figure>
+      <div class="col-sm-6 col-xs-12">
+        <div class="info">
+          <h3>Visit us for free!</h3>
+          <p>
+            <strong>Over 70% of our visitors enroll in our program.</strong>
+            We're so confident you will too, we'll fly you here for free!
+          </p>
+          <%= link_to 'Request a free visit', new_visit_path, class:'button button-small' %>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+
+    <div class="row header">
+      <div class="col-md-12">
+        <h3>Recommended by Classical Conversation leaders & alumni:</h3>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <div class="testimonial pull-right">
+          <div class="quote">
+            “SDC’s Rivendell Program is a fantastic cultivation of the education our children are
+            receiving through Classical Conversations.  At Rivendell, our students are provided a capstone
+            opportunity to mature as they engage in the great conversation of humanity, all-the-while earning
+            a college Associate's degree.”
+            <div class="arrow-down">
+              <%= content_tag :div, nil, class:'arrow' %>
+              <%= content_tag :div, nil, class:'arrow-border' %>
+            </div>
+          </div>
+          <figure class="author">
+            <%= content_tag :figcaption, 'Melissa Weaver', class:'name' %>
+            <%= content_tag :figcaption, 'CC Area Manager (Minnesota, North Dakota)', class:'company' %>
+          </figure>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="testimonial">
+          <div class="quote">
+            "Rivendell is one of your best next steps after completing Classical Conversations. In keeping with
+            ‘Classical,’ ‘Christian,’ ‘Community,’ we present a college core program that will continue to push,
+            encourage and transform you in your first two years of college."
+            <div class="arrow-down">
+              <%= content_tag :div, nil, class:'arrow' %>
+              <%= content_tag :div, nil, class:'arrow-border' %>
+            </div>
+          </div>
+          <figure class="author">
+            <%= content_tag :figcaption, 'Daniel Shirley', class:'name' %>
+            <%= content_tag :figcaption, 'Alumnus, Classical Conversations, Rivendell Program', class:'company' %>
+          </figure>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="wrapper clearfix">
+          <h4>Take the first step on a college journey that will change your life!</h4>
+
+          <%= link_to 'Apply now', admissions_apply_now_path, class:'button button-small' %>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
