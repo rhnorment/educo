@@ -14,8 +14,189 @@
 <section id="tabs">
   <div class="container">
 
+    <div class="row header">
+      <div class="col-md-12">
+        <h3>An Exceptional College Core Program</h3>
+        <p>
+          Continue your <strong>Classical</strong>, <strong>Christian</strong>, <strong>Community</strong>
+          education and experience the liberal arts eight ways:
+        </p>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-md-12 tabs-wrapper">
 
+        <ul class="nav nav-tabs">
+          <%= content_tag :li, link_to('Christianly', '#christianly', data: { toggle:'tab' }), class:'active' %>
+          <%= content_tag :li, link_to('Sequentially', '#sequentially', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Communally', '#communally', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Globally', '#globally', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Critically', '#critically', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Classically', '#classically', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Socratically', '#socratically', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Holistically', '#holistically', data: { toggle:'tab' }) %>
+        </ul>
+
+        <div class="tab-content">
+
+          <div id="christianly" class="tab-pane fade in active">     <!-- CHRISTIANLY -->
+            <div class="col-md-6 info">
+              <h4>Learn the college core <strong><i>Christianly</i></strong></h4>
+              <p>Study all subjects from a biblical worldview perspective.</p>
+              <ul>
+                <li>Hear God’s voice in every subject</li>
+                <li>Connect life with all of scripture</li>
+                <li>Buttress a defense of your faith</li>
+              </ul>
+              <%= content_tag :p, academics_read_more_link('christianly') %>
+            </div>
+            <figure class="col-md-6 image">
+              <%= image_tag 'christianly.jpg', width:'359', class:'img-responsive img-rounded', alt:'christian college core image' %>
+            </figure>
+          </div>
+
+          <div id="sequentially" class="tab-pane fade">     <!-- SEQUENTIALLY -->
+            <figure class="col-md-6 image">
+              <%= image_tag 'sequential.jpg', width:'359', class:'img-responsive img-rounded', alt:'sequenced modular curriculum image' %>
+            </figure>
+            <div class="col-md-6 info">
+              <h4>Progress through the college core <strong><i>Sequentially</i></strong></h4>
+              <p>Study the liberal arts one subject at a time in the flow of the biblical narrative.</p>
+              <ul>
+                <li>Walk incrementally through the great sciences</li>
+                <li>Mature in your love for learning</li>
+                <li>Reveal the unity of knowledge</li>
+              </ul>
+              <%= content_tag :p, academics_read_more_link('sequentially') %>
+            </div>
+          </div>
+
+          <div id="communally" class="tab-pane fade">     <!-- COMMUNALLY -->
+            <div class="col-md-6 info">
+              <h4>Experience the college core <strong><i>Communally</i></strong></h4>
+              <p>
+                Belong to a cohort of 20-30 colleagues, 2 faculty, and a mentor, and remain together
+                for the entire program.
+              </p>
+              <ul>
+                <li>Continue your CC experience</li>
+                <li>Broaden your capacity to love unconditionally</li>
+                <li>Foster deep and meaningful relationships with peers and faculty</li>
+              </ul>
+              <%= content_tag :p, academics_read_more_link('communally') %>
+            </div>
+            <figure class="col-md-6 image">
+              <%= image_tag 'communally.jpg', width:'359', class:'img-responsive img-rounded', alt:'authentic community image' %>
+            </figure>
+          </div>
+
+          <div id="globally" class="tab-pane fade">     <!-- GLOBALLY -->
+            <figure class="col-md-6 image">
+              <%= image_tag 'globally.jpg', width:'359', class:'img-responsive img-rounded', alt:'study abroad image' %>
+            </figure>
+            <div class="col-md-6 info">
+              <h4>Journey through the college core <strong><i>Globally</i></strong></h4>
+              <p>Study the fine arts in Rome, Florence, Venice, and Assisi.  Need we say more?</p>
+              <ul>
+                <li>Experience cross-cultural living</li>
+                <li>Create a connoisseur's eye for beauty</li>
+                <li>Increase aesthetic sensitivity</li>
+              </ul>
+              <%= content_tag :p, academics_read_more_link('globally') %>
+            </div>
+          </div>
+
+          <div id="critically" class="tab-pane fade">     <!-- CRITICALLY -->
+            <div class="col-md-6 info">
+              <h4>Think through the college core <strong><i>Critically</i></strong></h4>
+              <p>Learn a critical thinking method and apply it every day to every subject and assignment.</p>
+              <ul>
+                <li>Take IEW to the next level</li>
+                <li>Learn arguments visually</li>
+                <li>Read, comprehend, and write culture</li>
+              </ul>
+              <%= content_tag :p, academics_read_more_link('critically') %>
+            </div>
+            <figure class="col-md-6 image">
+              <%= image_tag 'critically.jpg', width:'359', class:'img-responsive img-rounded', alt:'critical thinking image' %>
+            </figure>
+          </div>
+
+          <div id="classically" class="tab-pane fade">     <!-- CLASSICALLY -->
+            <figure class="col-md-6 image">
+              <%= image_tag 'classically.jpg', width:'359', class:'img-responsive img-rounded', alt:'great books curriculum image' %>
+            </figure>
+            <div class="col-md-6 info">
+              <h4>Approach the college core <strong><i>Classically</i></strong></h4>
+              <p>Learn from the greatest minds who ever lived.</p>
+              <ul>
+                <li>Study under the original authors of the 'Great Books'</li>
+                <li>Prolonged exposure to the ‘Great Minds’</li>
+                <li>Have a little genius rub off on you</li>
+              </ul>
+              <%= content_tag :p, academics_read_more_link('classically') %>
+            </div>
+          </div>
+
+          <div id="socratically" class="tab-pane fade">     <!-- SOCRATICALLY -->
+            <div class="col-md-6 info">
+              <h4>Discuss the college core <strong><i>Socratically</i></strong></h4>
+              <p>Question and discuss subjects instead of listening to lectures.</p>
+              <ul>
+                <li>Learn to love your neighbor</li>
+                <li>Improve the art of listening</li>
+                <li>Grow in the art of discussion</li>
+              </ul>
+              <%= content_tag :p, academics_read_more_link('socratically') %>
+            </div>
+            <figure class="col-md-6 image">
+              <%= image_tag 'socratically.jpg', width:'359', class:'img-responsive img-rounded', alt:'socratic discussion image' %>
+            </figure>
+          </div>
+
+          <div id="holistically" class="tab-pane fade">     <!-- HOLISTICALLY -->
+            <figure class="col-md-6 image">
+              <%= image_tag 'holistically.jpg', width:'359', class:'img-responsive img-rounded', alt:'holistic education image' %>
+            </figure>
+            <div class="col-md-6 info">
+              <h4>Practice the college core <strong><i>Holistically</i></strong></h4>
+              <p>You are more than a brain.  You are intellectual, spiritual, moral, social, and emotional.</p>
+              <ul>
+                <li>Develop habits of character</li>
+                <li>Polish life skills essential for success</li>
+                <li>Graduate as a Student of Honor<sup><small>TM</small></sup></li>
+              </ul>
+              <%= content_tag :p, academics_read_more_link('holistically') %>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+
+    <div class="row header">
+      <div class="col-md-12">
+
+        <h3 class="m-b-xl">Live a Life Worth Having: Emily’s Experience</h3>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="embed-responsive embed-responsive-16by9">
+
+        <iframe src="https://www.youtube.com/embed/mWLgqnKunEw" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+    </div>
 
   </div>
 </section>
