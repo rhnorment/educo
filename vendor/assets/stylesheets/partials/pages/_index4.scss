@@ -1,7 +1,7 @@
 @import "../snippets/features";
 @import "../snippets/slider";
 
-#home4 {
+#landing {
 	#hero {
 		background: #4B4848;
 		background-size: cover;
@@ -9,7 +9,7 @@
 		position: relative;
 		top: -60px;
 		overflow: hidden;
-		background-image: url("../../images/bg.png");
+		background-image: image_url('journey-hero.jpg');
 		box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.35);
 
 		@media (max-width: 991px) {
@@ -21,7 +21,37 @@
 			padding-top: 105px;
 		}
 
-		h1.hero-text {
+	  	&:before {
+			position: absolute;
+			content: '';
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
+			background: -moz-linear-gradient(right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
+			background: -o-linear-gradient(right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
+			background: linear-gradient(right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
+		}
+
+		&:after {
+		  position: absolute;
+		  content: '';
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  height: 100%;
+		  /*background: rgba(6, 13, 32, 0.15);*/
+		  /*background: rgba(13, 37, 102, 0.24);*/
+		  background: rgba(32, 54, 114, 0.29);
+		}
+
+	  	.container {
+			position: relative;
+			z-index: 33;
+	  	}
+
+	  h1.hero-text {
 			text-align: center;
 			font-family: $roboto;
 			font-size: 36px;

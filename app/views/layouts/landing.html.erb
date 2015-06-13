@@ -8,22 +8,22 @@
   <%= render 'layouts/head' %>
 </head>
 
-<body id="home">
+<body id="landing">
 
     <header class="navbar navbar-inverse hero" role="banner">
 
         <div class="container">
-            <%= render 'landing_pages/header' %>
+            <%= render 'layouts/hero_header' %>
         </div>
 
     </header>
 
     <%= yield %>
 
-    <footer id="footer-white">
+    <footer id="footer">
 
         <div class="container">
-            <%= render 'landing_pages/footer' %>
+            <%= render 'layouts/footer' %>
         </div>
 
     </footer>

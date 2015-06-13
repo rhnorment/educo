@@ -6,8 +6,6 @@ class LandingPagesController < ApplicationController
 
   def classical_conversations
     @page_title = 'Welcome Classical Conversations!'
-
-
   end
 
 end

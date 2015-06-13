@@ -1,13 +1,23 @@
 <div class="navbar-header">
+
   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
-  <div id="header-logo">
-    <%= image_tag('banner-logo.png', alt: 'Banner Logo') %>
-  </div>
-  <!--<%= link_to @company_name, root_path, class:'navbar-brand' %>-->
+
+  <% if controller_name == 'landing_pages' %>
+
+      <%= link_to @company_name, root_path, class:'navbar-brand' %>
+
+  <% else %>
+
+      <div id="header-logo">
+        <%= image_tag('banner-logo.png', alt: 'Banner Logo') %>
+      </div>
+
+  <% end %>
+
 </div>
 
 <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
