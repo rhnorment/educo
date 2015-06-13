@@ -23,11 +23,13 @@ ActiveAdmin.register Visit do
   menu priority: 3
 
   index do
+    selectable_column
     column  :student_name
     column  :parent_name
     column  :travel_dates
     column  :travel_times
     column  :airport
+    actions
   end
 
 end

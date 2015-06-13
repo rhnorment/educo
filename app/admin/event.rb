@@ -27,6 +27,8 @@ ActiveAdmin.register Event do
 
   menu priority: 5
 
+  filter :id, as: :check_boxes
+
   permit_params   :name, :summary, :description, :date, :time, :venue, :address1, :address2, :city, :state, :zip_code,
                   :speaker, :title, :bio, :photo
 
@@ -35,7 +37,7 @@ ActiveAdmin.register Event do
   end
 
   index do
-    id_column
+    selectable_column
     column :name
     column :slug
     column :summary
