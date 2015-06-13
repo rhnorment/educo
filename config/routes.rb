@@ -20,9 +20,11 @@ Rails.application.routes.draw do
   get           '/admissions',              to: 'site_pages#admissions'
   get           '/admissions/apply_now',    to: 'site_pages#apply_now'
 
+  get           '/classical_conversations', to: 'landing_pages#classical_conversations'
+
   resources     :gallery_photos,            path: '/gallery',  only: [:index]
-  resources     :visits,                    only: [:new, :create], path_names: { new: 'request_visit' }
-  resources     :leads,                     path: '/students', only: [:new, :create]
+  resources     :visits,                    only: [:new, :create], path_names:  { new: 'request_visit' }
+  resources     :leads,                     only: [:new, :create], path_names:  { new: 'request_brochure' }
   resources     :contacts,                  only: [:new, :create]
   resources     :events,                    only: [:index, :show]
 

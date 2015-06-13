@@ -2,12 +2,12 @@ class LandingPagesController < ApplicationController
 
   layout 'landing'
 
-  caches_page :student
+  caches_page :classical_conversations
 
-  def student
-    @page_title = 'An Exceptional College Core Program'
+  def classical_conversations
+    @page_title = 'Welcome Classical Conversations!'
 
-    session[:leadsource_id] = Lead::FACEBOOK_ID
+
   end
 
 end
