@@ -2,6 +2,12 @@ module Infusionsoftable
 
   extend ActiveSupport::Concern
 
+  # constants
+  TRIGGER_TAG_ID = 271
+  ADD_TO_CALL_LIST_ID = 293
+  FACEBOOK_ID = 265
+  DEFAULT_LEADSOURCE_ID = 267
+
   def add_contact_to_infusionsoft
     contact_id = Infusionsoft.contact_add_with_dup_check( { FirstName: self.first_name,
                                                             LastName: self.last_name,

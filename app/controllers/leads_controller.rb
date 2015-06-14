@@ -7,14 +7,14 @@ class LeadsController < ApplicationController
   def new
     @lead = Lead.new
 
-    session[:trigger_tag_id] = Lead::TRIGGER_TAG_ID
+    session[:trigger_tag_id] = Infusionsoftable::TRIGGER_TAG_ID
   end
 
   def create
     lead = Lead.new(lead_params)
 
-    lead.trigger_tag_id = session[:trigger_tag_id]
-    lead.leadsource_id = session[:leadsource_id] ||= Lead::DEFAULT_LEADSOURCE_ID
+    lead.trigger_tag_id = session[:trigger_tag_id] ||= Infusionsoftable::TRIGGER_TAG_ID
+    lead.leadsource_id = session[:leadsource_id] ||= Infusionsoftable::DEFAULT_LEADSOURCE_ID
 
     if lead.save
       @message = 'Please download your brochure'

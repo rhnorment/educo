@@ -18,12 +18,6 @@ class Lead < ActiveRecord::Base
   # configuration
   include Infusionsoftable
 
-  # constants
-  TRIGGER_TAG_ID = 271
-  ADD_TO_CALL_LIST_ID = 293
-  FACEBOOK_ID = 265
-  DEFAULT_LEADSOURCE_ID = 267
-
   # model validations by scope
   validates       :first_name, :last_name, :email, presence: true
   validates       :email, format: { with: /\A\S+@\S+\z/ }
