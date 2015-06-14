@@ -80,12 +80,39 @@
 
   <div class="row">
 
-    <div class="col-md-8 info">
+    <div class="col-md-9 info">
+      <h4>Scholarship Applications</h4>
+
+      <div class="row">
+        <div class="col-md-4">
+          <%= link_to cl_image_tag('RSSF_Application.pdf', width:200, height:250, crop: :fill),
+                      'http://res.cloudinary.com/hm4cykqp2/image/upload/v1434297858/RSSF_Application.pdf',
+                      target:'_blank' %>
+
+          <figcaption class="m-t-md text-uc text-xs text-center text-muted">Click to download the RSSF Scholarship Application</figcaption>
+        </div>
+
+        <div class="col-md-4">
+          <%= link_to cl_image_tag('Church_Match.pdf', width:200, height:250, crop: :fill),
+                      'http://res.cloudinary.com/hm4cykqp2/image/upload/v1434297848/Church_Match.pdf',
+                      target:'_blank' %>
+
+          <figcaption class="m-t-md text-uc text-xs text-center text-muted">Click to download the Church Match Scholarship Application</figcaption>
+        </div>
+
+        <div class="col-md-4">
+          <%= link_to cl_image_tag('Norment_Scholarship.pdf', width:200, height:250, crop: :fill),
+                      'http://res.cloudinary.com/hm4cykqp2/image/upload/v1434297842/Norment_Scholarship.pdf',
+                      target:'_blank' %>
+
+          <figcaption class="m-t-md text-uc text-xs text-center text-muted">Click to download the Norment Scholarship Application</figcaption>
+        </div>
+      </div>
 
 
     </div>
 
-    <div class="col-md-4 info">
+    <div class="col-md-3 info">
       <h4>Additional Resources</h4>
 
       <ul>
