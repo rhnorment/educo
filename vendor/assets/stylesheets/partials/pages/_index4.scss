@@ -5,7 +5,7 @@
 	#hero {
 		background: #4B4848;
 		background-size: cover;
-		height: 583px;
+		height: 350px;
 		position: relative;
 		top: -60px;
 		overflow: hidden;
@@ -14,7 +14,7 @@
 
 		@media (max-width: 991px) {
 			padding-top: 100px;
-			height: 550px;
+			height: 350px;
 		}
 
 		@media (min-width: 992px) {
