@@ -114,7 +114,7 @@
 			.screens {
 				img {
 					margin: 0 auto;
-					margin-bottom: 80px;
+					margin-bottom: 50px;
 					margin-top: 10px;
 
 					&.magnifier {
@@ -144,19 +144,16 @@
 					}
 					.icons {
 						margin-bottom: 20px;
-						.ion-icon:before {
+						i:before {
 							/* I only added gradient for -webkit because other browsers render incorrectly gradients on the icons :/ */
 							color: #b2c3cb;
 							background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b2c3cb), color-stop(100%,  #DBE3E7));
 							background: -webkit-linear-gradient(#b2c3cb, #DBE3E7);
 
-							font-size: 60px;
+							font-size: 48px;
 							-webkit-background-clip: text;
 							-webkit-text-fill-color: transparent;
 							margin: 0 9px;
-						}
-						.ion-social-windows:before {
-							font-size: 50px;
 						}
 					}
 					p {

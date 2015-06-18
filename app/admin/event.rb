@@ -27,8 +27,6 @@ ActiveAdmin.register Event do
 
   menu priority: 5
 
-  filter :id, as: :check_boxes
-
   permit_params   :name, :summary, :description, :date, :time, :venue, :address1, :address2, :city, :state, :zip_code,
                   :speaker, :title, :bio, :photo
 
@@ -85,6 +83,7 @@ ActiveAdmin.register Event do
       f.input :title
       f.input :bio
       f.input :photo, as: :file
+      f.input :comments
     end
     f.actions
   end
