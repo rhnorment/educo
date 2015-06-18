@@ -58,10 +58,12 @@ ActiveAdmin.register Event do
       row :address2
       row :city, :state, :zip_code
       row :speaker
+      row :title
       row :bio
       row :photo do
         cl_image_tag(event.photo_url)
       end
+      row :comments
     end
     active_admin_comments
   end
