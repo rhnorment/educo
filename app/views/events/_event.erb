@@ -6,30 +6,40 @@
 
     <figure class="col-md-6 screen">
       <%= cl_image_tag event.photo, class:'img-responsive', alt: "#{event.speaker} photo" %>
-      <%= content_tag :figcaption, event.speaker, class:'m-t-sm' %>
+
+      <%= content_tag :figcaption, event.speaker, class:'m-t-sm text-muted' %>
     </figure>
 
     <div class="col-md-6 description">
 
-      <p><strong>Summary:  </strong><%= sanitize(event.summary) %></p>
+      <p>
+        <strong>Summary:</strong>
 
-      <p><strong>Date:  </strong><%= event.date %></p>
+        <%= sanitize(event.summary) %>
+      </p>
 
-      <p><strong>Time:  </strong><%= event.time %></p>
+      <p>
+        <strong>Date:  </strong>
 
-      <p><strong>Location:  </strong><%= event.venue %></p>
+        <%= event.date %>
+      </p>
+
+      <p>
+        <strong>Time:  </strong>
+
+        <%= event.time %>
+      </p>
+
+      <p>
+        <strong>Location:  </strong>
+
+        <%= event.venue %>
+      </p>
 
       <p>
         <strong>Address:</strong><br />
 
-        <%= event.address1 %><br />
-
-        <% if event.address2.present? %>
-
-            <%= event.address2 %><br />
-
-        <% end %>
-
+        <%= address_for(event) %><br />
         <%= event.city %>, <%= event.state %>  <%= event.zip_code %>
       </p>
 
