@@ -71,8 +71,8 @@ ActiveAdmin.register Event do
   form do |f|
     f.inputs 'Event Details' do
       f.input :name
-      f.input :summary
-      f.input :description
+      f.input :summary, as: :html_editor
+      f.input :description, as: :html_editor
       f.input :date, as: :datetime_select, start_year: 2015
       f.input :time
       f.input :venue
@@ -83,9 +83,9 @@ ActiveAdmin.register Event do
       f.input :zip_code
       f.input :speaker
       f.input :title
-      f.input :bio
+      f.input :bio, as: :html_editor
       f.input :photo, as: :file
-      f.input :comments
+      f.input :comments, as: :html_editor
     end
     f.actions
   end
