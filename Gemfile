@@ -46,5 +46,6 @@ group :production do
   gem 'puma'
   gem 'rails_12factor'
 	gem 'pg'
+  gem 'newrelic_rpm'
 end
 
