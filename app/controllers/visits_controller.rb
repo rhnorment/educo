@@ -47,7 +47,8 @@ class VisitsController < ApplicationController
 
     def visit_params
       params.require(:visit).permit(:student_name, :parent_name, :student_phone, :parent_phone,
-            :student_email, :parent_email, :student_dob, :parent_dob, :travel_dates, :travel_times, :airport)
+            :student_email, :parent_email, :student_dob, :parent_dob, :travel_dates, :travel_times,
+                                    :airport, :special_requests)
     end
 
 end

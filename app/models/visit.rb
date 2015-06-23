@@ -2,20 +2,21 @@
 #
 # Table name: visits
 #
-#  id            :integer          not null, primary key
-#  student_name  :string
-#  parent_name   :string
-#  student_phone :string
-#  parent_phone  :string
-#  student_email :string
-#  parent_email  :string
-#  student_dob   :date
-#  parent_dob    :date
-#  travel_dates  :text
-#  travel_times  :text
-#  airport       :string
-#  created_at    :datetime         not null
-#  updated_at    :datetime         not null
+#  id               :integer          not null, primary key
+#  student_name     :string
+#  parent_name      :string
+#  student_phone    :string
+#  parent_phone     :string
+#  student_email    :string
+#  parent_email     :string
+#  student_dob      :date
+#  parent_dob       :date
+#  travel_dates     :text
+#  travel_times     :text
+#  airport          :string
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  special_requests :text
 #
 
 class Visit < ActiveRecord::Base
