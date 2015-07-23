@@ -1,11 +1,15 @@
 class SitePagesController < ApplicationController
 
-  caches_page         :home, :about, :academics, :student_life, :admissions
+  caches_page         :announcement
 
   before_action       :set_leadsource_id
 
   def home
     render layout: 'site'
+  end
+
+  def announcement
+    render layout:  'coming_soon'
   end
 
   def about
